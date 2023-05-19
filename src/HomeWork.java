@@ -2,7 +2,7 @@ import javax.swing.*;
 public class HomeWork {
     public static void main(String[] args) {
 
-        int chose = Integer.parseInt(JOptionPane.showInputDialog("Как вы хотите видеть выполнения задания" +
+        int chose = Integer.parseInt(JOptionPane.showInputDialog("Как вы хотите видеть выполнение задания" +
                 "\n1, если через консоль" +
                 "\n2, если через графический интерфейс" +
                 "\nВаш выбор: "));

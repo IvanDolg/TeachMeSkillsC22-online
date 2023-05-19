@@ -30,7 +30,7 @@ public class FirstTask {
 
     }
 
-    // Решение задания с испольпользованием стандартной библиотеки Javax
+    // Решение задания с испольпользованием Javax
     public static void setPersonParametesJavaX(){
         String name;
         String surname;

@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.util.Scanner;
 
 /*                     -Task-
-* Создать программу, который будет принимать один символ и выводить в
+* Создать программу, которая будет принимать один символ и выводить в
 * консоль символическое значение, а на следующей строчке его численное.*/
 public class SecondTask {
 
@@ -20,7 +20,7 @@ public class SecondTask {
         System.out.println("Символьное значение символа: " + (int)symbol);
     }
 
-    // Решение задания с испольпользованием стандартной библиотеки Javax
+    // Решение задания с испольпользованием Javax
     public  static  void symbolJavaX(){
         String symbol = JOptionPane.showInputDialog("Введиет символ: ");
         char ch = symbol.charAt(0);

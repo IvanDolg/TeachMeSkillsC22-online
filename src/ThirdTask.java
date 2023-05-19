@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.util.Scanner;
 
 /*                     -Task-
- * Создать программу, который принимает на входе следующие значения: вес и
+ * Создать программу, которая принимает на входе следующие значения: вес и
  * рост. После этого выводит на экран т.н. BMI (Body Mass Index).*/
 public class ThirdTask {
 
@@ -24,7 +24,7 @@ public class ThirdTask {
         System.out.println("BMI: " + weight/(height*height));
     }
 
-    // Решение задания с испольпользованием стандартной библиотеки Javax
+    // Решение задания с испольпользованием Javax
     // При введении дробных значений использовать " . " !!!
     public static void bodyMassIndexJavaX(){
         double height;
