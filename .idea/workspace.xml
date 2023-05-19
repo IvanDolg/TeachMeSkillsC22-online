@@ -21,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -73,6 +78,7 @@
       <workItem from="1684270466393" duration="290000" />
       <workItem from="1684270850245" duration="1909000" />
       <workItem from="1684448486597" duration="7886000" />
+      <workItem from="1684496571056" duration="2151000" />
     </task>
     <servers />
   </component>
@@ -88,6 +94,17 @@
               <option name="CUSTOM_BOOLEAN_PROPERTIES">
                 <map>
                   <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/homework_3" />
+                      </list>
+                    </value>
+                  </entry>
                 </map>
               </option>
             </State>
