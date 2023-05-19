@@ -2,10 +2,13 @@ import javax.swing.JOptionPane;
 import java.util.Scanner;
 
 /*                     -Task-
-Создадим программу, которая принимает следующие параметры:имя, фамилия, возраст, рост,  вес.  Данные должны выводить
-информацию на экран.*/
+* Создать программу, которая с помощью класса Scanner принимает
+* следующие данные: имя, фамилия, возраст, рост и вес. Эти данные
+* должны храниться в соответствующих переменных.*/
 public class FirstTask {
-    public static void setDatanew (){
+
+    // Решение задания с испольпользованием Scanner
+    public static void setPersonParametes (){
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Введите имя: ");
@@ -20,23 +23,25 @@ public class FirstTask {
         System.out.print("Введите вес: ");
         int weight = scanner.nextInt();
 
-        System.out.println("Имя: " + name);
+        System.out.println("\nИмя: " + name);
         System.out.println("Фамилия: " + surname);
         System.out.println("Возраст: " + age + " лет");
         System.out.println("Вес: " + weight + " кг");
 
     }
-    public static void setData(){
+
+    // Решение задания с испольпользованием стандартной библиотеки Javax
+    public static void setPersonParametesJavaX(){
         String name;
         String surname;
         int age;
         int weight;
 
-        name = JOptionPane.showInputDialog("Ввод Имени");
-        surname = JOptionPane.showInputDialog("Ваод Фамилии");
-        age = Integer.parseInt(JOptionPane.showInputDialog("Ввод возраста"));
-        weight = Integer.parseInt(JOptionPane.showInputDialog("Ввод веса"));
-        JOptionPane.showMessageDialog(null,"Имя: "+name + "\n" + "Фамилия: "+surname
-                + "\n" + "Возраст: " + age + "лет" + "\n" + "Вес: " + weight + "кг");
+        name = JOptionPane.showInputDialog("Введите имя: ");
+        surname = JOptionPane.showInputDialog("Введите фамилию: ");
+        age = Integer.parseInt(JOptionPane.showInputDialog("Введите ваш возраст: "));
+        weight = Integer.parseInt(JOptionPane.showInputDialog("Введите ваш вес: "));
+        JOptionPane.showMessageDialog(null,"Имя: "+ name + "\n" +
+                "Фамилия: " + surname + "\n" + "Возраст: " + age + " лет" + "\n" + "Вес: " + weight + " кг");
     }
 }
