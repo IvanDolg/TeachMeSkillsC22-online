@@ -7,41 +7,41 @@ import java.util.Scanner;
 * должны храниться в соответствующих переменных.*/
 public class FirstTask {
 
-    // Решение задания с испольпользованием Scanner
+    // Solving a task using Scanner
     public static void setPersonParametes (){
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Введите имя: ");
+        System.out.print("Enter a name: ");
         String name = scanner.nextLine();
 
-        System.out.print("Введите фамилию: ");
+        System.out.print("Enter a surname: ");
         String surname = scanner.nextLine();
 
-        System.out.print("Введите возраст: ");
+        System.out.print("Enter the age: ");
         int age = scanner.nextInt();
 
-        System.out.print("Введите вес: ");
+        System.out.print("Enter the weight: ");
         int weight = scanner.nextInt();
 
-        System.out.println("\nИмя: " + name);
-        System.out.println("Фамилия: " + surname);
-        System.out.println("Возраст: " + age + " лет");
-        System.out.println("Вес: " + weight + " кг");
+        System.out.println("\nName: " + name);
+        System.out.println("Surname: " + surname);
+        System.out.println("Age: " + age + " years");
+        System.out.println("Weight: " + weight + " kg");
 
     }
 
-    // Решение задания с испольпользованием Javax
+    // Solving a task using Javax
     public static void setPersonParametesJavaX(){
         String name;
         String surname;
         int age;
         int weight;
 
-        name = JOptionPane.showInputDialog("Введите имя: ");
-        surname = JOptionPane.showInputDialog("Введите фамилию: ");
-        age = Integer.parseInt(JOptionPane.showInputDialog("Введите ваш возраст: "));
-        weight = Integer.parseInt(JOptionPane.showInputDialog("Введите ваш вес: "));
-        JOptionPane.showMessageDialog(null,"Имя: "+ name + "\n" +
-                "Фамилия: " + surname + "\n" + "Возраст: " + age + " лет" + "\n" + "Вес: " + weight + " кг");
+        name = JOptionPane.showInputDialog("Enter a name: ");
+        surname = JOptionPane.showInputDialog("Enter a surname: ");
+        age = Integer.parseInt(JOptionPane.showInputDialog("Enter the age: "));
+        weight = Integer.parseInt(JOptionPane.showInputDialog("Enter the weight: "));
+        JOptionPane.showMessageDialog(null,"Name: "+ name + "\n" +
+                "Surname: " + surname + "\n" + "Age: " + age + " years" + "\n" + "Weight: " + weight + " kg");
     }
 }

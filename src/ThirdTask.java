@@ -6,33 +6,38 @@ import java.util.Scanner;
  * рост. После этого выводит на экран т.н. BMI (Body Mass Index).*/
 public class ThirdTask {
 
-    // Решение задания с испольпользованием Scanner
-    // При введении дробных значений использовать " , " !!!
+    // Solving a task using Scanner
+    // When entering fractional values, use " , " !!!
     public static void bodyMassIndex(){
         System.out.println("\n\t\t\t ---- THIRD TASK ----\n");
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Введите рост: ");
+        System.out.print("Enter height (in meters): ");
         double height = scanner.nextDouble();
 
-        System.out.print("Введиет вес: ");
+        System.out.print("Enter weight: ");
         double weight = scanner.nextDouble();
 
-        System.out.println("Вес: " + weight);
-        System.out.println("Рост: " + height);
-        System.out.println("BMI: " + weight/(height*height));
+        double bmi = weight/(height*height);
+        String result = String.format("%.3f",bmi);
+
+        System.out.println("Weight: " + weight + " kg");
+        System.out.println("Height: " + height + " m");
+        System.out.println("BMI: " + result + " kg/m^2");
     }
 
-    // Решение задания с испольпользованием Javax
-    // При введении дробных значений использовать " . " !!!
+    // Solving a task using Javax
+    // When entering fractional values, use " . " !!!
     public static void bodyMassIndexJavaX(){
-        double height;
-        double weight;
 
-        height = Double.parseDouble(JOptionPane.showInputDialog("Введите рост: "));
-        weight = Double.parseDouble(JOptionPane.showInputDialog("Введите вес: "));
-        JOptionPane.showMessageDialog(null,"Рост: " + height +" м"+ "\n"
-                + "Вес: " + weight + " кг"+ "\n" + "BMI: " + weight/(height*height));
+        double height = Double.parseDouble(JOptionPane.showInputDialog("Enter height: "));
+        double weight = Double.parseDouble(JOptionPane.showInputDialog("Enter weight: "));
+
+        double bmi = (weight/(height*height));
+        String result = String.format("%.3f",bmi);
+
+        JOptionPane.showMessageDialog(null,"Height: " + height +" m"+ "\n"
+                + "Weight: " + weight + " kg"+ "\n" + "BMI: " + result + " kg/m^2");
     }
 }

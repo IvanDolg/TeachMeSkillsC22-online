@@ -6,25 +6,25 @@ import java.util.Scanner;
 * консоль символическое значение, а на следующей строчке его численное.*/
 public class SecondTask {
 
-    // Решение задания с испольпользованием Scanner
+    // Solving a task using Scanner
     public static void symbol(){
         System.out.println("\n\t\t\t ---- SECOND TASK ----\n");
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Введите символ: ");
+        System.out.print("Enter symbol: ");
 
         char symbol = scanner.next().charAt(0);
 
-        System.out.println("Ваш символ: " + symbol);
-        System.out.println("Символьное значение символа: " + (int)symbol);
+        System.out.println("Your symbol: " + symbol);
+        System.out.println("Symbolic value: " + (int)symbol);
     }
 
-    // Решение задания с испольпользованием Javax
+    // Solving a task using Javax
     public  static  void symbolJavaX(){
-        String symbol = JOptionPane.showInputDialog("Введиет символ: ");
+        String symbol = JOptionPane.showInputDialog("Enter symbol: ");
         char ch = symbol.charAt(0);
-        JOptionPane.showMessageDialog(null, "Символ: " + symbol + "\n" + "Номер символа: " + (int) ch);
+        JOptionPane.showMessageDialog(null, "Symbol: " + symbol + "\n"
+                + "Symbolic value: " + (int) ch);
     }
-
 }
