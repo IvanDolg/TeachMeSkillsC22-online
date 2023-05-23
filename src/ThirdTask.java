@@ -12,7 +12,7 @@ public class ThirdTask {
         System.out.println("\n\t\t\t ---- THIRD TASK ----\n");
 
         Scanner scanner = new Scanner(System.in);
-
+        //
         System.out.print("Enter height (in meters): ");
         double height = scanner.nextDouble();
 
