@@ -5,6 +5,7 @@ public class HomeWork4 {
         System.out.println(getParity(10));
         System.out.println(getWeather(-20));
         System.out.println(getNameColour(4));
+        System.out.println(getNumber());
     }
 
     // 1 task
@@ -81,5 +82,16 @@ public class HomeWork4 {
             default:
                 return "Wrong number";
         }
+    }
+
+    // ---- Cycles ----
+    // 1 task
+    // Print numbers from 1 to 99 (use: for())
+    public static int getNumber(){
+        for(int i = 1; i <= 99; i++){
+                System.out.println(i);
+                i++;
+        }
+        return 0;
     }
 }
