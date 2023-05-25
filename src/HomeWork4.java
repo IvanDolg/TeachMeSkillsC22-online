@@ -9,9 +9,10 @@ public class HomeWork4 {
         System.out.println(getNameColour(4));
         getNumber();
         getNumberInc();
-        //getSum();
+        getSum();
         getSequence();
         getSequenceNew();
+        getSquaresNum();
     }
 
     // 1 task
@@ -137,6 +138,16 @@ public class HomeWork4 {
         System.out.print("\n\nOur sequence: ");
         for (int i = 0; i >= -45; i+= -5){
             System.out.print(i + " ");
+        }
+    }
+
+    // 6 task
+    // Print squares of numbers from 10 to 20 inclusive.
+    public static void getSquaresNum() {
+        System.out.println("\n\nSquares are equal: ");
+
+        for (int i = 10; i <= 20; i++){
+            System.out.println(Math.pow(i,2));
         }
     }
 }
