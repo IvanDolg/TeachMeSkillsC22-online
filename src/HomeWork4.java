@@ -3,9 +3,9 @@ public class HomeWork4 {
         System.out.println(getSeson(5));
         System.out.println(getSeson1(3));
         System.out.println(getParity(10));
-        System.out.println(getWeather(-20));
+        getWeather(-20);
         System.out.println(getNameColour(4));
-        System.out.println(getNumber());
+        getNumber();
     }
 
     // 1 task
@@ -52,13 +52,9 @@ public class HomeWork4 {
 
     // 4 task
     // Weather interval (Heat/Normally/Cold)
-    public static String getWeather (int tem){
-        if (tem > -5){
-            return "Heat";
-        }
-        if (tem > -20 && tem <= -5){
-            return "Normally";
-        } else {return "Cold";}
+    public static void getWeather (int tem){
+        String status = (tem > -5) ? "Heat" : (tem > -20 && tem <= -5) ? "Normally" : "Cold";
+        System.out.println(status);
     }
 
     // 5 task
@@ -83,15 +79,12 @@ public class HomeWork4 {
                 return "Wrong number";
         }
     }
-
     // ---- Cycles ----
     // 1 task
     // Print numbers from 1 to 99 (use: for())
-    public static int getNumber(){
-        for(int i = 1; i <= 99; i++){
+    public static void getNumber(){
+        for(int i = 1; i <= 99; i+=2){
                 System.out.println(i);
-                i++;
         }
-        return 0;
     }
 }
