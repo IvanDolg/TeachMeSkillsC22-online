@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class HomeWork4 {
     public static void main(String[] args) {
         System.out.println(getSeson(5));
@@ -7,6 +9,7 @@ public class HomeWork4 {
         System.out.println(getNameColour(4));
         getNumber();
         getNumberInc();
+        getSum();
     }
 
     // 1 task
@@ -43,7 +46,7 @@ public class HomeWork4 {
     }
 
     // 3 task
-    // Parity / odd numbers
+    // Parity / odd numbers.
     public static String getParity (int number){
         if (number%2 == 0){
             return "Yor number is even: " + number + "\n";
@@ -51,14 +54,14 @@ public class HomeWork4 {
     }
 
     // 4 task
-    // Weather interval (Heat/Normally/Cold)
+    // Weather interval (Heat/Normally/Cold).
     public static void getWeather (int tem){
         String status = (tem > -5) ? "Heat \n" : (tem > -20 && tem <= -5) ? "Normally \n" : "Cold \n";
         System.out.println(status);
     }
 
     // 5 task
-    // Each number must match the color of the rainbow
+    // Each number must match the color of the rainbow.
     public static String getNameColour (int colourNum){
         switch (colourNum){
             case 1:
@@ -81,7 +84,7 @@ public class HomeWork4 {
     }
     // ---- Cycles ----
     // 1 task
-    // Print numbers from 1 to 99 (use: for())
+    // Print numbers from 1 to 99 (use: for()).
     public static void getNumber(){
         for(int i = 1; i <= 99; i+=2){
                 System.out.println(i);
@@ -92,8 +95,26 @@ public class HomeWork4 {
     // 2 task
     // Print numbers from 5 to 1
     public static void getNumberInc(){
-        for (int i = 5; i >= 1; i--){
+        for (int i = 5; i > 1; i--){
             System.out.println(i);
         }
+    }
+
+    // 3 task
+    // The user enters any positive int. And the program sums up all
+    // the numbers from 1 to the number entered by the user
+    // (use: the Scanner class).
+    public static void getSum(){
+        System.out.print("\nPrint number: ");
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+        int sum = 0;
+
+        System.out.println("Number: " + number);
+
+        for (int i = 1; i < number; i++){
+           sum = sum + i;
+        }
+        System.out.println("Sum of numbers: " + sum);
     }
 }
