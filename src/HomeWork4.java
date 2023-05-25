@@ -9,8 +9,9 @@ public class HomeWork4 {
         System.out.println(getNameColour(4));
         getNumber();
         getNumberInc();
-        getSum();
+        //getSum();
         getSequence();
+        getSequenceNew();
     }
 
     // 1 task
@@ -127,6 +128,15 @@ public class HomeWork4 {
 
         while (number < 98){
             System.out.print("\nNumber: " + (number+=7));
+        }
+    }
+
+    // 5 task
+    // Print the first 10 numbers of the sequence
+    public static void getSequenceNew(){
+        System.out.print("\n\nOur sequence: ");
+        for (int i = 0; i >= -45; i+= -5){
+            System.out.print(i + " ");
         }
     }
 }
