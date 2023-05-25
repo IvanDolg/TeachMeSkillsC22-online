@@ -2,7 +2,8 @@ public class HomeWork4 {
     public static void main(String[] args) {
         System.out.println(getSeson(5));
         System.out.println(getSeson1(3));
-        System.out.println(getParity(3));
+        System.out.println(getParity(10));
+        System.out.println(getWeather(-20));
     }
 
     // 1 task
@@ -45,5 +46,16 @@ public class HomeWork4 {
         if (number%2 == 0){
             return "Yor number is even: " + number;
         } else {return "Yor number is odd: " + number;}
+    }
+
+    // 4 task
+    // Weather interval (Heat/Normally/Cold)
+    public static String getWeather (int tem){
+        if (tem > -5){
+            return "Heat";
+        }
+        if (tem > -20 && tem <= -5){
+            return "Normally";
+        } else {return "Cold";}
     }
 }
