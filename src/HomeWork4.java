@@ -6,6 +6,7 @@ public class HomeWork4 {
         getWeather(-20);
         System.out.println(getNameColour(4));
         getNumber();
+        getNumberInc();
     }
 
     // 1 task
@@ -13,32 +14,31 @@ public class HomeWork4 {
     public static String getSeson(int month){
         switch (month){
             case 1, 2, 12:
-                return "This is a Winter";
+                return "This is a Winter \n";
             case 3, 4, 5:
-                return "This is a Spring";
+                return "This is a Spring \n";
             case 6, 7, 8:
-                return "This is a Summer";
+                return "This is a Summer \n";
             case 9, 10, 11:
-                return "This is a Autumn";
+                return "This is a Autumn \n";
             default:
-                return "There is no such month in the year";
+                return "There is no such month in the year \n";
         }
     }
 
     // 2 task
     // The names of the time of the year by the number of the month (use: if-else-if).
     public static String getSeson1(int month){
-
         if (month == 1 || month == 2 || month == 12){
-            return "This is a Winter";
+            return "This is a Winter \n";
         } else if (month == 3 || month == 4 || month == 5) {
-            return "This is a Spring";
+            return "This is a Spring \n";
         } else if (month == 6 || month == 7 || month == 8) {
-            return "This is a Summer";
+            return "This is a Summer \n";
         } else if (month == 9 || month == 10 || month == 11) {
-            return "This is a Autumn";
+            return "This is a Autumn \n";
         } else {
-            return "There is no such month in the year";
+            return "There is no such month in the year \n";
         }
     }
 
@@ -46,14 +46,14 @@ public class HomeWork4 {
     // Parity / odd numbers
     public static String getParity (int number){
         if (number%2 == 0){
-            return "Yor number is even: " + number;
-        } else {return "Yor number is odd: " + number;}
+            return "Yor number is even: " + number + "\n";
+        } else {return "Yor number is odd: " + number + "\n";}
     }
 
     // 4 task
     // Weather interval (Heat/Normally/Cold)
     public static void getWeather (int tem){
-        String status = (tem > -5) ? "Heat" : (tem > -20 && tem <= -5) ? "Normally" : "Cold";
+        String status = (tem > -5) ? "Heat \n" : (tem > -20 && tem <= -5) ? "Normally \n" : "Cold \n";
         System.out.println(status);
     }
 
@@ -62,21 +62,21 @@ public class HomeWork4 {
     public static String getNameColour (int colourNum){
         switch (colourNum){
             case 1:
-                return "Red";
+                return "Red \n";
             case 2:
-                return "Orange";
+                return "Orange \n";
             case 3:
-                return "Yellow";
+                return "Yellow \n";
             case 4:
-                return "Green";
+                return "Green \n";
             case 5:
-                return "Blue";
+                return "Blue \n";
             case 6:
-                return "Dark blue";
+                return "Dark blue \n";
             case 7:
-                return "Violet";
+                return "Violet \n";
             default:
-                return "Wrong number";
+                return "Wrong number \n";
         }
     }
     // ---- Cycles ----
@@ -85,6 +85,15 @@ public class HomeWork4 {
     public static void getNumber(){
         for(int i = 1; i <= 99; i+=2){
                 System.out.println(i);
+        }
+        System.out.println();
+    }
+
+    // 2 task
+    // Print numbers from 5 to 1
+    public static void getNumberInc(){
+        for (int i = 5; i >= 1; i--){
+            System.out.println(i);
         }
     }
 }
