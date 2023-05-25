@@ -4,6 +4,7 @@ public class HomeWork4 {
         System.out.println(getSeson1(3));
         System.out.println(getParity(10));
         System.out.println(getWeather(-20));
+        System.out.println(getNameColour(4));
     }
 
     // 1 task
@@ -57,5 +58,28 @@ public class HomeWork4 {
         if (tem > -20 && tem <= -5){
             return "Normally";
         } else {return "Cold";}
+    }
+
+    // 5 task
+    // Each number must match the color of the rainbow
+    public static String getNameColour (int colourNum){
+        switch (colourNum){
+            case 1:
+                return "Red";
+            case 2:
+                return "Orange";
+            case 3:
+                return "Yellow";
+            case 4:
+                return "Green";
+            case 5:
+                return "Blue";
+            case 6:
+                return "Dark blue";
+            case 7:
+                return "Violet";
+            default:
+                return "Wrong number";
+        }
     }
 }
