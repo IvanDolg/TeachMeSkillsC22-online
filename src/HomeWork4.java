@@ -10,6 +10,7 @@ public class HomeWork4 {
         getNumber();
         getNumberInc();
         getSum();
+        getSequence();
     }
 
     // 1 task
@@ -116,5 +117,16 @@ public class HomeWork4 {
            sum = sum + i;
         }
         System.out.println("Sum of numbers: " + sum);
+    }
+
+    // 4 task
+    // Output the sequence 7 14 21 28 35 42 49 56 63 70 77 84 91 98
+    // (use: cycle while).
+    public static void getSequence(){
+        int number = 0;
+
+        while (number < 98){
+            System.out.print("\nNumber: " + (number+=7));
+        }
     }
 }
