@@ -2,6 +2,7 @@ public class HomeWork4 {
     public static void main(String[] args) {
         System.out.println(getSeson(5));
         System.out.println(getSeson1(3));
+        System.out.println(getParity(3));
     }
 
     // 1 task
@@ -36,5 +37,13 @@ public class HomeWork4 {
         } else {
             return "There is no such month in the year";
         }
+    }
+
+    // 3 task
+    // Parity / odd numbers
+    public static String getParity (int number){
+        if (number%2 == 0){
+            return "Yor number is even: " + number;
+        } else {return "Yor number is odd: " + number;}
     }
 }
