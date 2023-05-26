@@ -192,6 +192,7 @@ public class HomeWork4 {
             money += money * 0.07;
         }
         System.out.println("After " + month + " months the deposit amount will be: " + money + "\n");
+        System.out;
     }
 
     // 3 task
