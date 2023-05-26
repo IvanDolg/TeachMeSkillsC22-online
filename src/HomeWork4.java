@@ -14,6 +14,7 @@ public class HomeWork4 {
         getSequenceNew();
         getSquaresNum();
         getFibonacciNum();
+        giveMoneyToBank();
     }
 
     // 1 task
@@ -166,5 +167,30 @@ public class HomeWork4 {
             n=n1;
             n1=n2;
         }
+    }
+
+    // 2 task
+    // Enter the deposit amount and the number of months.
+    // The bank calculates the final amount of the deposit taking into account
+    // taking into account the interest accrued for each month.
+    // (use: for && float)
+    public static void giveMoneyToBank(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("\n\nEnter the amount of money: ");
+        float money =  scanner.nextFloat();
+
+        System.out.print("Enter the amount of month ");
+        int month = scanner.nextInt();
+
+        for(int i = 1; i <= month; i++){
+            money += money * 0.07;
+        }
+        System.out.println("After " + month + " months the deposit amount will be: " + money + "\n");
+    }
+
+    // 3 task
+    // Multiplication table
+    public static void getTable(){
+
     }
 }
