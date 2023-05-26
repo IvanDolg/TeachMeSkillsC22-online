@@ -13,6 +13,7 @@ public class HomeWork4 {
         getSequence();
         getSequenceNew();
         getSquaresNum();
+        getFibonacciNum();
     }
 
     // 1 task
@@ -148,6 +149,22 @@ public class HomeWork4 {
 
         for (int i = 10; i <= 20; i++){
             System.out.println(Math.pow(i,2));
+        }
+    }
+
+    // ---- Additionaly ----
+    // 1 task
+    // Display the first 11 members of the Fibonacci sequence.
+    public static void getFibonacciNum(){
+        int n = 1;
+        int n1 = 1;
+        int n2;
+        System.out.print("\n"+n + " " + n1 + " ");
+        for(int i = 3; i<=11; i++){
+            n2= n+n1;
+            System.out.print(n2 + " ");
+            n=n1;
+            n1=n2;
         }
     }
 }
