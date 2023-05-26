@@ -15,6 +15,7 @@ public class HomeWork4 {
         getSquaresNum();
         getFibonacciNum();
         giveMoneyToBank();
+        getTable();
     }
 
     // 1 task
@@ -191,6 +192,11 @@ public class HomeWork4 {
     // 3 task
     // Multiplication table
     public static void getTable(){
-
+        System.out.println("Multiplication table: ");
+        for (int i = 1; i <= 9; i++) {
+            for (int j = 1; j <= 9; j++) {
+                System.out.println(i + " * " + j + " = " + (i*j));
+            }
+        }
     }
 }
