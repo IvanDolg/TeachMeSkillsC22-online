@@ -91,9 +91,12 @@ public class HomeWork4 {
     // ---- Cycles ----
     // 1 task
     // Print numbers from 1 to 99 (use: for()).
+
+    int counter = 1;
     public static void getNumber(){
-        for(int i = 1; i <= 99; i+=2){
-                System.out.println(i);
+        for(int i = 1, a = 1; i <= 99; i+=2){
+            System.out.println(a + ") "+ i);
+                a++;
         }
         System.out.println();
     }
