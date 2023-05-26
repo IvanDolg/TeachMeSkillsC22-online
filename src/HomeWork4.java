@@ -134,7 +134,9 @@ public class HomeWork4 {
         int number = 0;
 
         while (number < 98){
-            System.out.print("\nNumber: " + (number+=7));
+            for (int i = 1; i <= 14; i++){
+                System.out.print("\n" + i + ")\t" + (number+=7));
+            }
         }
     }
 
