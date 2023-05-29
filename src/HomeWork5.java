@@ -6,6 +6,7 @@ public class HomeWork5 {
     public static void main(String[] args) {
         setArray();
         System.out.println("Array without element " + setArray2());
+        setArray3();
     }
 
     // 0 task
@@ -60,12 +61,46 @@ public class HomeWork5 {
         return Arrays.toString(resultArr);
     }
 
-
-
     // 2 task
     // Create and fill an array with random numbers and output the maximum, minimum and average values.
     // Use the Math.random() method to generate a random number. It will be possible to create an array of any
     // size. The size of the array is entered from the console.
+    public static void setArray3(){
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("\nEnter number of indexes: ");
+        int index = scanner.nextInt();
+
+        int[] array = new int [index];
+        for (int i = 0; i < array.length; i++){
+            array[i] = ((int) (Math.random() * index) - 15);
+        }
+        System.out.println("\nRandom array: \n" + Arrays.toString(array));
+        Arrays.sort(array);
+        System.out.println("Sorted array: \n" + Arrays.toString(array));
+
+        System.out.print("\nWhat do you want to output: \n" +
+                "1) Output the minimum element of the array \n" +
+                "2) Output the maximum element of the array \n" +
+                "3) Output the middle element of the array \n" +
+                "\nYour choice: ");
+        int choice = scanner.nextInt();
+
+        switch (choice){
+            case 1:
+                System.out.println("Minimum element of the array: " + array[0]);
+                break;
+            case 2:
+                System.out.println("Maximum element of the array: " + array [array.length-1]);
+                break;
+            case 3:
+                System.out.println("Middle element of the array: " + array [(array.length-1)/2]);
+                break;
+            default:
+                System.out.println("Enter correct number ;)");
+                break;
+        }
+    }
 
     // 3 task
     // Create 2 arrays of 5 numbers. Output the arrays to the console in two separate lines.
