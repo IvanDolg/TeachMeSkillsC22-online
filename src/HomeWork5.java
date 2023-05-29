@@ -4,9 +4,10 @@ import java.util.Arrays;
 
 public class HomeWork5 {
     public static void main(String[] args) {
-        setArray();
-        System.out.println("Array without element " + setArray2());
-        setArray3();
+        //setArray();
+        //System.out.println("Array without element " + setArray2());
+        //setArray3();
+        setArray4();
     }
 
     // 0 task
@@ -106,7 +107,30 @@ public class HomeWork5 {
     // Create 2 arrays of 5 numbers. Output the arrays to the console in two separate lines.
     // Calculate the arithmetic mean of the elements of each array and
     // report which one of the arrays has the greater arithmetic mean (or tell that their arithmetic average is equal).
+    public static void setArray4(){
+        int[] array = new int [5];
+        for (int i = 0; i < array.length; i++){
+            array[i] = ((int) (Math.random() * 5) + 8);
+        }
+        System.out.println("\nFirst random array: \n" + Arrays.toString(array));
 
+        int[] array1 = new int [5];
+        for (int i = 0; i < array1.length; i++){
+            array1[i] = ((int) (Math.random() * 5) + 8);
+        }
+        System.out.println("Second random array: \n" + Arrays.toString(array1));
+
+        int sum = Arrays.stream(array).sum();
+        int sum1 = Arrays.stream(array1).sum();
+        System.out.println("\nSum of the first array: " + sum);
+        System.out.println("Sum of the second array: " + sum1 + "\n");
+
+       String res = sum == sum1 ? "First array & second array are equal \n" : sum < sum1 ? "The first array is" +
+               " less than the second array \n" : "The first array is greater than the second array \n";
+        System.out.println(res);
+
+
+    }
 
     // ---- Additional task ----
     // 4 task
@@ -115,6 +139,8 @@ public class HomeWork5 {
     // greater than 5 and less than or equal to 10. If n doesn't satisfy the condition - print a message saying so.
     // If the user entered a wrong number, the program should ask the user to repeat the input.
     // Create a second array using only even elements of the first array, if there are any, and print it on the screen.
+
+
 
     // 5 task
     // Create an array and fill in the array. Display the array as a string.
