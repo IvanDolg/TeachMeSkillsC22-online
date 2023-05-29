@@ -9,7 +9,8 @@ public class HomeWork5 {
         //setArray3();
         //setArray4();
         //getArray5();
-        getArray6();
+        //getArray6();
+        getArray7();
     }
 
     // 0 task
@@ -192,6 +193,11 @@ public class HomeWork5 {
     // Create an array of strings. Fill it with arbitrary names people.
     // Sort the array. Print the result on the console.
 
+    public static void getArray7(){
+        String[] names = new String[]{ "Vlad", "Ivan", "Sergey", "Mike","Liza",};
+        Arrays.sort(names);
+        System.out.println(Arrays.toString(names));
+    }
     // 7 task
     // Bubble sorting
 
