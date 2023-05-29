@@ -8,7 +8,8 @@ public class HomeWork5 {
         //System.out.println("Array without element " + setArray2());
         //setArray3();
         //setArray4();
-        getArray5();
+        //getArray5();
+        getArray6();
     }
 
     // 0 task
@@ -175,6 +176,17 @@ public class HomeWork5 {
     // 5 task
     // Create an array and fill in the array. Display the array as a string.
     // Mark each element with an odd index by zero. Display the array on a separate line.
+    public static void getArray6(){
+
+        int[] array = new int [5];
+        for (int i = 0; i < array.length; i++){
+            array[i] = ((int) (Math.random() * 5) - 15);
+            if (array[i] % 2 != 0){
+                array[i] = 0;
+            }
+        }
+        System.out.println("\nArray of even numbers & zeros: \n" + Arrays.toString(array));
+    }
 
     // 6 task
     // Create an array of strings. Fill it with arbitrary names people.
