@@ -1,9 +1,11 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
+
 public class HomeWork5 {
     public static void main(String[] args) {
         setArray();
+        System.out.println("Array without element " + setArray2());
     }
 
     // 0 task
@@ -15,16 +17,16 @@ public class HomeWork5 {
         int[] array = new int[]{3, 4, 5, 6, 7};
         System.out.println("This is your array: " + Arrays.toString(array));
 
-        System.out.print("\nEnter num what you want: ");
+        System.out.print("\nEnter number what you want to print: ");
         int num = scanner.nextInt();
 
         for (int i = 0; i < array.length; i++) {
             if (array[i] == num) {
-                System.out.println("\n" + num + " is in the array");
+                System.out.println("The number " + num + " is in the array");
                 return;
             }
         }
-        System.out.println(num + " not in the array");
+        System.out.println("The number " + num + " not in the array");
     }
 
     // 1 task
@@ -32,6 +34,31 @@ public class HomeWork5 {
     // Let the number be given from the console (Scanner class). If there is no such number
     // - print a message about it.
     // The result should be a new array without the specified number.
+    // System.out.println("The" + num + "is not from the array, array is: " + Arrays.toString(res));
+    public static String setArray2(){
+        Scanner scanner = new Scanner(System.in);
+
+        int index = 0;
+        int[] array = new int[]{3, 4, 5, 6, 7};
+        System.out.println("\nThis is your array: " + Arrays.toString(array));
+        int [] resultArr = new int[array.length - 1];
+
+        System.out.print("Enter the number the number you want to delete: ");
+        int num = scanner.nextInt();
+
+        if (num < 3 || num > 7){
+            System.out.println("The number " + num + " is not from the array");
+            System.exit(0);
+        }
+
+        for(int i = 0; i < array.length; i++) {
+            if (array[i] != num) {
+                resultArr[index] = array[i];
+                index++;
+            }
+        }
+        return Arrays.toString(resultArr);
+    }
 
 
 
