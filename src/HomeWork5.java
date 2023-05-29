@@ -7,7 +7,8 @@ public class HomeWork5 {
         //setArray();
         //System.out.println("Array without element " + setArray2());
         //setArray3();
-        setArray4();
+        //setArray4();
+        getArray5();
     }
 
     // 0 task
@@ -128,8 +129,6 @@ public class HomeWork5 {
        String res = sum == sum1 ? "First array & second array are equal \n" : sum < sum1 ? "The first array is" +
                " less than the second array \n" : "The first array is greater than the second array \n";
         System.out.println(res);
-
-
     }
 
     // ---- Additional task ----
@@ -139,8 +138,39 @@ public class HomeWork5 {
     // greater than 5 and less than or equal to 10. If n doesn't satisfy the condition - print a message saying so.
     // If the user entered a wrong number, the program should ask the user to repeat the input.
     // Create a second array using only even elements of the first array, if there are any, and print it on the screen.
+    public static void getArray5(){
+        Scanner scanner = new Scanner(System.in);
 
+        System.out.print("\nEnter number of indexes: ");
+        int index = scanner.nextInt();
 
+        if(index < 5 || index > 10){
+            System.out.println("Enter correct number ;)");
+            getArray5();
+            return;
+        }
+
+        int evenNum = 0;
+        int number = 0;
+
+        int[] array = new int [index];
+        for (int i = 0; i < array.length; i++){
+            array[i] = ((int) (Math.random() * index) - 15);
+            if (array[i] % 2 == 0){
+                evenNum++;
+            }
+        }
+        System.out.println("\nRandom array: \n" + Arrays.toString(array));
+
+        int [] array1 = new int [evenNum];
+        for (int i =0; i < array.length; i++){
+            if (array[i] % 2 == 0){
+                array1[number] = array[i];
+                number++;
+            }
+        }
+        System.out.println("Even array: \n" + Arrays.toString(array1));
+    }
 
     // 5 task
     // Create an array and fill in the array. Display the array as a string.
