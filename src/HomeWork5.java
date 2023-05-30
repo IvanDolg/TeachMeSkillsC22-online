@@ -2,6 +2,7 @@ import java.util.Scanner;
 import java.util.Arrays;
 public class HomeWork5 {
     public static void main(String[] args) {
+        scannerIn();
         setArray();
         System.out.println("Array without element " + setArray2());
         setArray3();
@@ -11,18 +12,20 @@ public class HomeWork5 {
         getArray7();
         bubbleSort();
     }
+    public static Scanner scannerIn(){
+        return new Scanner(System.in);
+    }
     // 0 task
     // Create an array of integers Output a message whether the given number is included
     // in the array or not (use: class Scanner).
     public static void setArray() {
-        Scanner scanner = new Scanner(System.in);
         System.out.println("\n\t\t\t ---- 0 TASK ----\n");
 
         int[] array = new int[]{3, 4, 5, 6, 7};
         System.out.println("This is your array: " + Arrays.toString(array));
 
         System.out.print("\nEnter number what you want to print: ");
-        int num = scanner.nextInt();
+        int num = scannerIn().nextInt();
 
         for (int i = 0; i < array.length; i++) {
             if (array[i] == num) {
@@ -40,8 +43,6 @@ public class HomeWork5 {
     // The result should be a new array without the specified number.
     // System.out.println("The" + num + "is not from the array, array is: " + Arrays.toString(res));
     public static String setArray2(){
-        Scanner scanner = new Scanner(System.in);
-
         System.out.println("\n\t\t\t ---- 1 TASK ----");
 
         int index = 0;
@@ -50,7 +51,7 @@ public class HomeWork5 {
         int [] resultArr = new int[array.length - 1];
 
         System.out.print("Enter the number the number you want to delete: ");
-        int num = scanner.nextInt();
+        int num = scannerIn().nextInt();
 
         if (num < 3 || num > 7){
             System.out.println("The number " + num + " is not from the array");
@@ -71,12 +72,10 @@ public class HomeWork5 {
     // Use the Math.random() method to generate a random number. It will be possible to create an array of any
     // size. The size of the array is entered from the console.
     public static void setArray3(){
-        Scanner scanner = new Scanner(System.in);
-
         System.out.println("\n\t\t\t ---- 2 TASK ----");
 
         System.out.print("\nEnter number of indexes: ");
-        int index = scanner.nextInt();
+        int index = scannerIn().nextInt();
 
         int[] array = new int [index];
         for (int i = 0; i < array.length; i++){
@@ -91,7 +90,7 @@ public class HomeWork5 {
                 "2) Output the maximum element of the array \n" +
                 "3) Output the middle element of the array \n" +
                 "\nYour choice: ");
-        int choice = scanner.nextInt();
+        int choice = scannerIn().nextInt();
 
         switch (choice){
             case 1:
@@ -146,12 +145,10 @@ public class HomeWork5 {
     // If the user entered a wrong number, the program should ask the user to repeat the input.
     // Create a second array using only even elements of the first array, if there are any, and print it on the screen.
     public static void getArray5(){
-        Scanner scanner = new Scanner(System.in);
-
         System.out.println("\t\t\t ---- 4 TASK ----");
 
         System.out.print("\nEnter number of indexes: ");
-        int index = scanner.nextInt();
+        int index = scannerIn().nextInt();
 
         if(index < 5 || index > 10){
             System.out.println("Enter correct number ;)");
@@ -179,6 +176,7 @@ public class HomeWork5 {
             }
         }
         System.out.println("Even array: \n" + Arrays.toString(array1));
+        scannerIn().close();
     }
 
     // 5 task
@@ -203,6 +201,7 @@ public class HomeWork5 {
 
     public static void getArray7(){
         System.out.println("\n\t\t\t ---- 6 TASK ----");
+
         String[] names = new String[]{ "Vlad", "Ivan", "Sergey", "Mike","Liza"};
         System.out.println("\nUnsorted array: \n" + Arrays.toString(names));
         Arrays.sort(names);
@@ -234,4 +233,5 @@ public class HomeWork5 {
         }
         System.out.println("\nSort array: \n" + Arrays.toString(array));
     }
+
 }
