@@ -1,7 +1,5 @@
 import java.util.Scanner;
 import java.util.Arrays;
-
-
 public class HomeWork5 {
     public static void main(String[] args) {
         setArray();
@@ -13,7 +11,6 @@ public class HomeWork5 {
         getArray7();
         bubbleSort();
     }
-
     // 0 task
     // Create an array of integers Output a message whether the given number is included
     // in the array or not (use: class Scanner).
