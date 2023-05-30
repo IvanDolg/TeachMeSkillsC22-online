@@ -233,5 +233,4 @@ public class HomeWork5 {
         }
         System.out.println("\nSort array: \n" + Arrays.toString(array));
     }
-
 }
