@@ -19,6 +19,7 @@ public class HomeWork5 {
     // in the array or not (use: class Scanner).
     public static void setArray() {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("\n\t\t\t ---- 0 TASK ----\n");
 
         int[] array = new int[]{3, 4, 5, 6, 7};
         System.out.println("This is your array: " + Arrays.toString(array));
@@ -43,6 +44,8 @@ public class HomeWork5 {
     // System.out.println("The" + num + "is not from the array, array is: " + Arrays.toString(res));
     public static String setArray2(){
         Scanner scanner = new Scanner(System.in);
+
+        System.out.println("\n\t\t\t ---- 1 TASK ----");
 
         int index = 0;
         int[] array = new int[]{3, 4, 5, 6, 7};
@@ -72,6 +75,8 @@ public class HomeWork5 {
     // size. The size of the array is entered from the console.
     public static void setArray3(){
         Scanner scanner = new Scanner(System.in);
+
+        System.out.println("\n\t\t\t ---- 2 TASK ----");
 
         System.out.print("\nEnter number of indexes: ");
         int index = scanner.nextInt();
@@ -112,6 +117,8 @@ public class HomeWork5 {
     // Calculate the arithmetic mean of the elements of each array and
     // report which one of the arrays has the greater arithmetic mean (or tell that their arithmetic average is equal).
     public static void setArray4(){
+        System.out.println("\n\t\t\t ---- 3 TASK ----");
+
         int[] array = new int [5];
         for (int i = 0; i < array.length; i++){
             array[i] = ((int) (Math.random() * 5) + 8);
@@ -143,6 +150,8 @@ public class HomeWork5 {
     // Create a second array using only even elements of the first array, if there are any, and print it on the screen.
     public static void getArray5(){
         Scanner scanner = new Scanner(System.in);
+
+        System.out.println("\t\t\t ---- 4 TASK ----");
 
         System.out.print("\nEnter number of indexes: ");
         int index = scanner.nextInt();
@@ -179,6 +188,7 @@ public class HomeWork5 {
     // Create an array and fill in the array. Display the array as a string.
     // Mark each element with an odd index by zero. Display the array on a separate line.
     public static void getArray6(){
+        System.out.println("\n\t\t\t ---- 5 TASK ----");
 
         int[] array = new int [5];
         for (int i = 0; i < array.length; i++){
@@ -195,6 +205,7 @@ public class HomeWork5 {
     // Sort the array. Print the result on the console.
 
     public static void getArray7(){
+        System.out.println("\n\t\t\t ---- 6 TASK ----");
         String[] names = new String[]{ "Vlad", "Ivan", "Sergey", "Mike","Liza"};
         System.out.println("\nUnsorted array: \n" + Arrays.toString(names));
         Arrays.sort(names);
@@ -203,11 +214,13 @@ public class HomeWork5 {
     // 7 task
     // Bubble sorting
     public static void bubbleSort(){
+        System.out.println("\n\t\t\t ---- 7 TASK ----\n");
+
         int[] array = new int [5];
         for (int i = 0; i < array.length; i++) {
             array[i] = ((int) (Math.random() * 5) - 15);
         }
-        System.out.println("\nRandom array: \n" + Arrays.toString(array));
+        System.out.println("Random array: \n" + Arrays.toString(array));
 
         boolean sorted = false;
         int temp;
