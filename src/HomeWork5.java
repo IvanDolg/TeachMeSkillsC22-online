@@ -4,13 +4,14 @@ import java.util.Arrays;
 
 public class HomeWork5 {
     public static void main(String[] args) {
-        //setArray();
-        //System.out.println("Array without element " + setArray2());
-        //setArray3();
-        //setArray4();
-        //getArray5();
-        //getArray6();
+        setArray();
+        System.out.println("Array without element " + setArray2());
+        setArray3();
+        setArray4();
+        getArray5();
+        getArray6();
         getArray7();
+        bubbleSort();
     }
 
     // 0 task
@@ -194,11 +195,33 @@ public class HomeWork5 {
     // Sort the array. Print the result on the console.
 
     public static void getArray7(){
-        String[] names = new String[]{ "Vlad", "Ivan", "Sergey", "Mike","Liza",};
+        String[] names = new String[]{ "Vlad", "Ivan", "Sergey", "Mike","Liza"};
+        System.out.println("\nUnsorted array: \n" + Arrays.toString(names));
         Arrays.sort(names);
-        System.out.println(Arrays.toString(names));
+        System.out.println("\nSort array: \n" + Arrays.toString(names));
     }
     // 7 task
     // Bubble sorting
+    public static void bubbleSort(){
+        int[] array = new int [5];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = ((int) (Math.random() * 5) - 15);
+        }
+        System.out.println("\nRandom array: \n" + Arrays.toString(array));
 
+        boolean sorted = false;
+        int temp;
+        while (!sorted){
+            sorted = true;
+            for (int i = 0; i < array.length -1; i++){
+                if (array[i] > array[i + 1]){
+                    temp = array[i];
+                    array[i] = array[i + 1];
+                    array[i + 1] = temp;
+                    sorted = false;
+                }
+            }
+        }
+        System.out.println("\nSort array: \n" + Arrays.toString(array));
+    }
 }
