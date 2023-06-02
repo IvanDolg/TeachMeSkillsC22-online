@@ -1,11 +1,12 @@
-import javax.swing.*;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class HomeWork6 {
     public static void main(String[] args) {
-        tripleDimensionalArray();
-        getArr();
+        //tripleDimensionalArray();
+        //getArr();
+        showTwoDimensionalArray(getArray());
+        showTwoDimensionalArray1(getArray1());
+        showTwoDimensionalArraySum(getArraysSum());
     }
     public static Scanner scanner(){
         return new Scanner(System.in);
@@ -37,6 +38,7 @@ public class HomeWork6 {
     // 2 task
     // Create a chessboard layout. For an array, we use String.
     public static void getArr(){
+        System.out.println("\n\t\t ---- 2 TASK ----");
         String [][] numbers = new String [8][8];
 
         for (char columns = 0; columns < numbers.length; columns++){
@@ -58,6 +60,69 @@ public class HomeWork6 {
         }
         for (String[] columns : numbers){
             for (String el : columns){
+                System.out.print(el + "\t");
+            }
+            System.out.println();
+        }
+    }
+    // Additional tasks
+    // 3 task
+    // Multiplication of matrices of size 3*3
+    public static int[][] getArray(){
+        return new int[][]{
+                {1, 0, 0, 0},
+                {0, 1, 0, 0},
+                {0, 0, 0, 0}
+        };
+    }
+    public static int[][] getArray1(){
+        return new int[][]{
+                {1, 2, 3},
+                {1, 1, 1},
+                {0, 0, 0},
+                {2, 1, 0}
+        };
+    }
+    public static int[][] getArraysSum(){
+        int leng = getArray().length;
+        int leng1 = getArray1().length;
+        int zero = getArray1()[0].length;
+        int [][] getArraysSum = new  int [leng][zero];
+
+        for (int i = 0; i < leng; i++){
+            for (int j = 0; j < zero; j++){
+                for (int k = 0; k < leng1; k++){
+                    getArraysSum[i][j] += getArray()[i][k] * getArray1()[k][j];
+                }
+            }
+        }
+        return getArraysSum;
+    }
+    public static void showTwoDimensionalArray(int[][] getArray) {
+        System.out.println("First Array is: ");
+        for (int[] columns : getArray) {
+            for (int el : columns) {
+                System.out.print(el + "\t");
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+    }
+    public static void showTwoDimensionalArray1(int[][] getArray1) {
+        System.out.println("Second Array is: ");
+
+        for (int [] columns : getArray1){
+            for (int el : columns){
+                System.out.print(el + "\t");
+            }
+            System.out.println();
+        }
+    }
+    public static void showTwoDimensionalArraySum(int[][] getArraysSum){
+        System.out.println("\nMultiplying two arrays: " );
+        for (int [] columns : getArraysSum()){
+            for (int el : columns){
                 System.out.print(el + "\t");
             }
             System.out.println();
