@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class HomeWork6 {
@@ -7,7 +8,8 @@ public class HomeWork6 {
         //showTwoDimensionalArray(getArray());
         //showTwoDimensionalArray1(getArray1());
         //showTwoDimensionalArraySum(getArraysSum());
-        getSum();
+        //getSum();
+        getDiagonals();
     }
     public static Scanner scanner(){
         return new Scanner(System.in);
@@ -146,5 +148,26 @@ public class HomeWork6 {
             }
         }
         System.out.println("Sum of array elements: " + sum);
+    }
+    // 5 task
+    // Output the diagonals of the array to the console.
+    public static void getDiagonals(){
+        int [][] array = new int[][]{
+                {1, 2, 3},
+                {1, 1, 1},
+                {0, 0, 0}
+        };
+        System.out.print("Main diagonal: ");
+        for (int rows = 0; rows < array.length; rows++) {
+            for (int columns = 0; columns < array[rows].length; columns++) {
+                if (rows == columns){
+                    System.out.print(array[rows][columns] + " ");
+                }
+            }
+        }
+        System.out.print("\nSecondary diagonal: ");
+        for (int rows = 0; rows < (Math.min(array[0].length, array.length)); rows++) {
+                        System.out.print(array[rows][array[0].length - rows - 1] + " ");
+        }
     }
 }
