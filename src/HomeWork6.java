@@ -4,9 +4,10 @@ public class HomeWork6 {
     public static void main(String[] args) {
         //tripleDimensionalArray();
         //getArr();
-        showTwoDimensionalArray(getArray());
-        showTwoDimensionalArray1(getArray1());
-        showTwoDimensionalArraySum(getArraysSum());
+        //showTwoDimensionalArray(getArray());
+        //showTwoDimensionalArray1(getArray1());
+        //showTwoDimensionalArraySum(getArraysSum());
+        getSum();
     }
     public static Scanner scanner(){
         return new Scanner(System.in);
@@ -127,5 +128,23 @@ public class HomeWork6 {
             }
             System.out.println();
         }
+    }
+    // 4 task
+    // Create a two-dimensional array. Output the sum
+    // of all the array elements to the console.
+    public static void getSum(){
+        int sum = 0;
+        int [][] array = new int[][]{
+                        {1, 2, 3},
+                        {1, 1, 1},
+                        {0, 0, 0},
+                        {2, 1, 0}
+                };
+        for (int rows = 0; rows < array.length; rows++){
+            for (int columns = 0; columns < array[rows].length; columns++){
+                sum += array[rows][columns];
+            }
+        }
+        System.out.println("Sum of array elements: " + sum);
     }
 }
