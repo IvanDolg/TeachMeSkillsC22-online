@@ -1,8 +1,11 @@
+import javax.swing.*;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class HomeWork6 {
     public static void main(String[] args) {
         tripleDimensionalArray();
+        getArr();
     }
     public static Scanner scanner(){
         return new Scanner(System.in);
@@ -27,6 +30,35 @@ public class HomeWork6 {
                     System.out.print(inner + "\t");
                 }
                 System.out.println();
+            }
+            System.out.println();
+        }
+    }
+    // 2 task
+    // Create a chessboard layout. For an array, we use String.
+    public static void getArr(){
+        String [][] numbers = new String [8][8];
+
+        for (char columns = 0; columns < numbers.length; columns++){
+            for (char rows = 0; rows < numbers[columns].length; rows++){
+                if (rows % 2 == 0){
+                    if (columns % 2 == 0){
+                        numbers[rows][columns] = String.valueOf((char) 'W');
+                    }else {
+                        numbers[rows][columns] = String.valueOf((char) 'B');
+                    }
+                } else {
+                    if (columns % 2 != 0){
+                        numbers[rows][columns] = String.valueOf((char) 'W');
+                    } else {
+                        numbers[rows][columns] = String.valueOf((char) 'B');
+                    }
+                }
+            }
+        }
+        for (String[] columns : numbers){
+            for (String el : columns){
+                System.out.print(el + "\t");
             }
             System.out.println();
         }
