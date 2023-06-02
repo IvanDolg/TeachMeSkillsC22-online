@@ -148,7 +148,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/HomeWork6.java</url>
-          <line>144</line>
+          <line>145</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

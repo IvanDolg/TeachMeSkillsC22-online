@@ -3,13 +3,14 @@ import java.util.Scanner;
 
 public class HomeWork6 {
     public static void main(String[] args) {
-        //tripleDimensionalArray();
-        //getArr();
-        //showTwoDimensionalArray(getArray());
-        //showTwoDimensionalArray1(getArray1());
-        //showTwoDimensionalArraySum(getArraysSum());
-        //getSum();
+        tripleDimensionalArray();
+        getArr();
+        showTwoDimensionalArray(getArray());
+        showTwoDimensionalArray1(getArray1());
+        showTwoDimensionalArraySum(getArraysSum());
+        getSum();
         getDiagonals();
+        getSortArray();
     }
     public static Scanner scanner(){
         return new Scanner(System.in);
@@ -168,6 +169,27 @@ public class HomeWork6 {
         System.out.print("\nSecondary diagonal: ");
         for (int rows = 0; rows < (Math.min(array[0].length, array.length)); rows++) {
                         System.out.print(array[rows][array[0].length - rows - 1] + " ");
+        }
+    }
+    // 6 task
+    // Create a two-dimensional array. Sort the elements in
+    // the rows of the two-dimensional array in ascending order.
+    public static void getSortArray(){
+        int [][] array = new int[][]{
+                {4, 1, -10},
+                {3, 1, 1},
+                {3, 6, 5}
+        };
+        for (int rows = 0; rows < array.length; rows++) {
+            for (int columns = 0; columns < array[rows].length; columns++) {
+                Arrays.sort(array[rows]);
+            }
+        }
+        for (int [] columns : array){
+            for (int el : columns){
+                System.out.print(el + "\t\t");
+            }
+            System.out.println();
         }
     }
 }
