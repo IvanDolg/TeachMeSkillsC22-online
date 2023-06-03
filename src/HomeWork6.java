@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 
 public class HomeWork6 {
@@ -20,9 +21,33 @@ public class HomeWork6 {
     // the entire array and increase each element by a given number.
     public static void tripleDimensionalArray(){
         System.out.println("\n\t\t ---- 1 TASK ----");
-        int [][][] cubeOriginal  = {{{1, 2, 3}, {10, 20, 30, 40}}, {{500, 600}}};
+        int [][][] cubeOriginal  = new int [3][3][3];
 
-        System.out.print("Write the number you want to grow the array by: ");
+        // Random filling of the array
+        System.out.println("Random filling of the array: ");
+        Random random = new Random();
+        for (int i = 0; i < cubeOriginal.length; i++){
+            for (int j = 0; j < cubeOriginal[i].length; j++){
+                for (int b = 0; b < cubeOriginal[j].length; b++){
+                    cubeOriginal[i][j][b] = random.nextInt(10);
+                }
+            }
+        }
+
+        for (int[][] outer : cubeOriginal)
+        {
+            for (int[] middle : outer)
+            {
+                for (int inner : middle)
+                {
+                    System.out.print(inner + "\t");
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
+
+        System.out.print("\nWrite the number you want to grow the array by: ");
         int number = scanner().nextInt();
 
         for (int[][] outer : cubeOriginal)
@@ -103,6 +128,7 @@ public class HomeWork6 {
         return getArraysSum;
     }
     public static void showTwoDimensionalArray(int[][] getArray) {
+        System.out.println("\n\t\t ---- 3 TASK ----");
         System.out.println("First Array is: ");
         for (int[] columns : getArray) {
             for (int el : columns) {
@@ -136,29 +162,46 @@ public class HomeWork6 {
     // Create a two-dimensional array. Output the sum
     // of all the array elements to the console.
     public static void getSum(){
+        System.out.println("\n\t\t ---- 4 TASK ----");
         int sum = 0;
-        int [][] array = new int[][]{
-                        {1, 2, 3},
-                        {1, 1, 1},
-                        {0, 0, 0},
-                        {2, 1, 0}
-                };
+        int [][] array = new int[3][3];
+
+        // Random filling of the array
+        System.out.println("Random filling of the array: ");
+        Random random = new Random();
+        for (int rows = 0; rows < array.length; rows++){
+            for (int columns = 0; columns < array[rows].length; columns++){
+                array [rows][columns] = random.nextInt(10);
+                System.out.print(array[rows][columns] + "\t");
+            }
+            System.out.println();
+        }
+
         for (int rows = 0; rows < array.length; rows++){
             for (int columns = 0; columns < array[rows].length; columns++){
                 sum += array[rows][columns];
             }
         }
-        System.out.println("Sum of array elements: " + sum);
+        System.out.println("\nSum of array elements: " + sum);
     }
     // 5 task
     // Output the diagonals of the array to the console.
     public static void getDiagonals(){
-        int [][] array = new int[][]{
-                {1, 2, 3},
-                {1, 1, 1},
-                {0, 0, 0}
-        };
-        System.out.print("Main diagonal: ");
+        System.out.println("\n\t\t ---- 5 TASK ----");
+        int [][] array = new int[3][3];
+
+        // Random filling of the array
+        System.out.println("Random filling of the array: ");
+        Random random = new Random();
+        for (int rows = 0; rows < array.length; rows++){
+            for (int columns = 0; columns < array[rows].length; columns++){
+                array [rows][columns] = random.nextInt(10);
+                System.out.print(array[rows][columns] + "\t");
+            }
+            System.out.println();
+        }
+
+        System.out.print("\nMain diagonal: ");
         for (int rows = 0; rows < array.length; rows++) {
             for (int columns = 0; columns < array[rows].length; columns++) {
                 if (rows == columns){
@@ -175,11 +218,21 @@ public class HomeWork6 {
     // Create a two-dimensional array. Sort the elements in
     // the rows of the two-dimensional array in ascending order.
     public static void getSortArray(){
-        int [][] array = new int[][]{
-                {4, 1, -10},
-                {3, 1, 1},
-                {3, 6, 5}
-        };
+        System.out.println("\n\n\t\t ---- 6 TASK ----");
+        int [][] array = new int[3][3];
+
+        // Random filling of the array
+        System.out.println("Random filling of the array: ");
+        Random random = new Random();
+        for (int rows = 0; rows < array.length; rows++){
+            for (int columns = 0; columns < array[rows].length; columns++){
+                array [rows][columns] = random.nextInt(10);
+                System.out.print(array[rows][columns] + "\t");
+            }
+            System.out.println();
+        }
+
+        System.out.println("\nSorted array: ");
         for (int rows = 0; rows < array.length; rows++) {
             for (int columns = 0; columns < array[rows].length; columns++) {
                 Arrays.sort(array[rows]);
@@ -187,7 +240,7 @@ public class HomeWork6 {
         }
         for (int [] columns : array){
             for (int el : columns){
-                System.out.print(el + "\t\t");
+                System.out.print(el + "\t");
             }
             System.out.println();
         }

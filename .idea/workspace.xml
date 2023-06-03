@@ -109,6 +109,7 @@
       <workItem from="1685114788672" duration="5540000" />
       <workItem from="1685303611101" duration="28527000" />
       <workItem from="1685443724994" duration="2394000" />
+      <workItem from="1685792709026" duration="2304000" />
     </task>
     <servers />
   </component>
@@ -142,16 +143,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/HomeWork6.java</url>
-          <line>145</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
