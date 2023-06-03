@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 import java.util.Arrays;
 public class HomeWork5 {
@@ -20,8 +21,13 @@ public class HomeWork5 {
     // in the array or not (use: class Scanner).
     public static void setArray() {
         System.out.println("\n\t\t\t ---- 0 TASK ----\n");
+        int[] array = new int[10];
 
-        int[] array = new int[]{3, 4, 5, 6, 7};
+        // Random filling of the array
+        Random random = new Random();
+        for (int i = 0; i < array.length; i++){
+            array[i] = random.nextInt(10);
+        }
         System.out.println("This is your array: " + Arrays.toString(array));
 
         System.out.print("\nEnter number what you want to print: ");
@@ -44,19 +50,27 @@ public class HomeWork5 {
     // System.out.println("The" + num + "is not from the array, array is: " + Arrays.toString(res));
     public static String setArray2(){
         System.out.println("\n\t\t\t ---- 1 TASK ----");
-
         int index = 0;
-        int[] array = new int[]{3, 4, 5, 6, 7};
+        int counter = 0;
+        int[] array = new int[10];
+
+        // Random filling of the array
+        Random random = new Random();
+        for (int i = 0; i < array.length; i++){
+            array[i] = random.nextInt(10);
+        }
         System.out.println("\nThis is your array: " + Arrays.toString(array));
-        int [] resultArr = new int[array.length - 1];
 
         System.out.print("Enter the number the number you want to delete: ");
         int num = scannerIn().nextInt();
 
-        if (num < 3 || num > 7){
-            System.out.println("The number " + num + " is not from the array");
-            System.exit(0);
+        for (int el : array){
+            if (el == num){
+                counter++;
+            }
         }
+
+        int [] resultArr = new int[array.length - counter];
 
         for(int i = 0; i < array.length; i++) {
             if (array[i] != num) {
@@ -78,33 +92,39 @@ public class HomeWork5 {
         int index = scannerIn().nextInt();
 
         int[] array = new int [index];
+        Random random = new Random();
         for (int i = 0; i < array.length; i++){
-            array[i] = ((int) (Math.random() * index) - 15);
+            array[i] = random.nextInt(20);
         }
         System.out.println("\nRandom array: \n" + Arrays.toString(array));
         Arrays.sort(array);
         System.out.println("Sorted array: \n" + Arrays.toString(array));
 
-        System.out.print("\nWhat do you want to output: \n" +
-                "1) Output the minimum element of the array \n" +
-                "2) Output the maximum element of the array \n" +
-                "3) Output the middle element of the array \n" +
-                "\nYour choice: ");
-        int choice = scannerIn().nextInt();
+        while (true){
+            System.out.print("\nWhat do you want to output: \n" +
+                    "1) Output the minimum element of the array \n" +
+                    "2) Output the maximum element of the array \n" +
+                    "3) Output the middle element of the array \n" +
+                    "4) Exit" +
+                    "\nYour choice: ");
+            int choice = scannerIn().nextInt();
 
-        switch (choice){
-            case 1:
-                System.out.println("Minimum element of the array: " + array[0]);
-                break;
-            case 2:
-                System.out.println("Maximum element of the array: " + array [array.length-1]);
-                break;
-            case 3:
-                System.out.println("Middle element of the array: " + array [(array.length-1)/2]);
-                break;
-            default:
-                System.out.println("Enter correct number ;)");
-                break;
+            switch (choice){
+                case 1:
+                    System.out.println("Minimum element of the array: " + array[0]);
+                    break;
+                case 2:
+                    System.out.println("Maximum element of the array: " + array [array.length-1]);
+                    break;
+                case 3:
+                    System.out.println("Middle element of the array: " + array [(array.length-1)/2]);
+                    break;
+                case 4:
+                    return;
+                default:
+                    System.out.println("Enter correct number ;)");
+                    break;
+            }
         }
     }
 
@@ -116,14 +136,15 @@ public class HomeWork5 {
         System.out.println("\n\t\t\t ---- 3 TASK ----");
 
         int[] array = new int [5];
+        Random random = new Random(10);
         for (int i = 0; i < array.length; i++){
-            array[i] = ((int) (Math.random() * 5) + 8);
+            array[i] = random.nextInt(10);
         }
         System.out.println("\nFirst random array: \n" + Arrays.toString(array));
 
         int[] array1 = new int [5];
         for (int i = 0; i < array1.length; i++){
-            array1[i] = ((int) (Math.random() * 5) + 8);
+            array1[i] = random.nextInt(10);
         }
         System.out.println("Second random array: \n" + Arrays.toString(array1));
 
@@ -160,8 +181,9 @@ public class HomeWork5 {
         int number = 0;
 
         int[] array = new int [index];
+        Random random = new Random();
         for (int i = 0; i < array.length; i++){
-            array[i] = ((int) (Math.random() * index) - 15);
+            array[i] = random.nextInt(10);
             if (array[i] % 2 == 0){
                 evenNum++;
             }
@@ -185,9 +207,15 @@ public class HomeWork5 {
     public static void getArray6(){
         System.out.println("\n\t\t\t ---- 5 TASK ----");
 
-        int[] array = new int [5];
+        int n = 5;
+        int[] array = new int [n];
+
+        Random random = new Random();
         for (int i = 0; i < array.length; i++){
-            array[i] = ((int) (Math.random() * 5) - 15);
+            array[i] = random.nextInt(10);
+        }
+        System.out.println("\nRandom Array: \n" + Arrays.toString(array));
+        for (int i = 0; i < array.length; i++){
             if (array[i] % 2 != 0){
                 array[i] = 0;
             }
@@ -212,9 +240,10 @@ public class HomeWork5 {
     public static void bubbleSort(){
         System.out.println("\n\t\t\t ---- 7 TASK ----\n");
 
+        Random random = new Random();
         int[] array = new int [5];
         for (int i = 0; i < array.length; i++) {
-            array[i] = ((int) (Math.random() * 5) - 15);
+            array[i] = random.nextInt(10);
         }
         System.out.println("Random array: \n" + Arrays.toString(array));
 
