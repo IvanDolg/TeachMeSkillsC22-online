@@ -1,33 +1,31 @@
 import java.util.Scanner;
 
 public class CreditCard {
-    public static void main(String[] args) {
-        int accountNumber;
-        int totalSum;
-
-        sumForLoan();
+    private int accountNumber;
+    private int totalSum;
+    public CreditCard(int totalSum){
+        this.totalSum = totalSum;
     }
-    public static Scanner scanner(){
-        return new Scanner(System.in);
+    public CreditCard(int accountNumber, int totalSum){
+        this.accountNumber = accountNumber;
+        this.totalSum = totalSum;
     }
-    public static void sumForLoan(){
-        System.out.print("Enter the amount of debt: ");
-        double amountOfDebt = scanner().nextDouble();
-
-        System.out.print("Enter the interest rate (as a percent): ");
-        double interestRate = scanner().nextDouble();
-        interestRate /= 100;
-
-        System.out.print("Enter the period for which the amount was taken (in days): ");
-        int period = scanner().nextInt();
-
-        System.out.print("The amount of interest for the reporting period: ");
-        double amountOfInterest = ((amountOfDebt * interestRate) / 365) * period;
-        System.out.print(Math.round(amountOfInterest) + "\n");
-
-        System.out.print("Total loan amount: ");
-        double totalAmount = (amountOfInterest * period) + amountOfDebt;
-        System.out.print(Math.round(totalAmount));
-
+    public int getTotalSum(){
+        return totalSum;
+    }
+    public int getAccountNumber(){
+        return accountNumber;
+    }
+    public void setTotalSum(int totalSum){
+        this.totalSum = totalSum;
+    }
+    public void setAccountNumber(int accountNumber){
+        this.accountNumber = accountNumber;
+    }
+    public void addMoney(int accuryual){
+        totalSum += accuryual;
+    }
+    public String toString(){
+        return "Total sum: " + this.totalSum;
     }
 }
