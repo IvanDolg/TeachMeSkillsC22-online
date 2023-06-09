@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51007435-8f9c-4797-b636-a60be43caad3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_06_2023_0_38_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_06_2023_0_38__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task3/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +53,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="HomeWork" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HomeWork" />
       <module name="lesson_2" />
@@ -84,8 +82,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="task3.Main" />
+      <module name="lesson_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="task3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.HomeWork5" />
         <item itemvalue="Application.HomeWork4" />
       </list>
@@ -112,7 +124,7 @@
       <workItem from="1685792709026" duration="2304000" />
       <workItem from="1686240923744" duration="4428000" />
       <workItem from="1686261343645" duration="1000" />
-      <workItem from="1686298132146" duration="5937000" />
+      <workItem from="1686298132146" duration="19927000" />
     </task>
     <servers />
   </component>
