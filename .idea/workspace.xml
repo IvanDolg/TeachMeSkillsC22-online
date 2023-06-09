@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51007435-8f9c-4797-b636-a60be43caad3" name="Changes" comment="" />
+    <list default="true" id="51007435-8f9c-4797-b636-a60be43caad3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_06_2023_0_38_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_02_06_2023_0_38__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/task2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/task2/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,7 +110,9 @@
       <workItem from="1685303611101" duration="28527000" />
       <workItem from="1685443724994" duration="2394000" />
       <workItem from="1685792709026" duration="2304000" />
-      <workItem from="1686240923744" duration="4172000" />
+      <workItem from="1686240923744" duration="4428000" />
+      <workItem from="1686261343645" duration="1000" />
+      <workItem from="1686298132146" duration="5937000" />
     </task>
     <servers />
   </component>
