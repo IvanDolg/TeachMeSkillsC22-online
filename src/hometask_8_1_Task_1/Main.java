@@ -1,29 +1,24 @@
 package hometask_8_1_Task_1;
-
 public class Main {
     public static void main(String[] args) {
+        Phone phone1 = new Phone("445514458", "iPhone 13", 234);
+        Phone phone2 = new Phone("296240058", "iPhone 14", 250);
+        Phone phone3 = new Phone("296950496", "Xiaomi 13");
 
+        System.out.println(phone1);
+        System.out.println("--------------------------------");
+        System.out.println(phone2);
+        System.out.println("--------------------------------");
+        System.out.println(phone1.receiveCall("Archil"));
+        System.out.println(phone1.getNumber());
+        System.out.println("--------------------------------");
+        System.out.println(phone2.receiveCall("Ivan"));
+        System.out.println(phone2.getNumber());
+        System.out.println("--------------------------------");
+        System.out.println(phone3);
+        System.out.println("--------------------------------");
+        System.out.println(phone1.receiveCall("Archil", Integer.parseInt(phone1.getNumber())));
+        System.out.println("--------------------------------");
+        System.out.println(phone1.sendMessage("296240058", "296950496", "298157027", "297835232"));
     }
-    // 1 Класс Phone.
-    //Создайте класс Phone, который содержит переменные number, model и
-    //weight.
-    //Создайте три экземпляра этого класса.
-    //Выведите на консоль значения их переменных.
-    //Добавить в класс Phone методы: receiveCall, имеет один параметр – имя
-    //звонящего. Выводит на консоль сообщение “Звонит {name}”. getNumber –
-    //возвращает номер телефона. Вызвать эти методы для каждого из
-    //объектов.
-    //Добавить конструктор в класс Phone, который принимает на вход три
-    //параметра для инициализации переменных класса - number, model и
-    //weight.
-    //Добавить конструктор, который принимает на вход два параметра для
-    //инициализации переменных класса - number, model.
-    //Добавить конструктор без параметров.
-    //Вызвать из конструктора с тремя параметрами конструктор с двумя.
-    //Добавьте перегруженный метод receiveCall, который принимает два
-    //параметра - имя звонящего и номер телефона звонящего. Вызвать этот
-    //метод.
-    //Создать метод sendMessage с аргументами переменной длины. Данный
-    //метод принимает на вход номера телефонов, которым будет отправлено
-    //сообщение. Метод выводит на консоль номера этих телефонов.
 }

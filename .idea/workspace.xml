@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51007435-8f9c-4797-b636-a60be43caad3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/task1/CreditCard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task1/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task2/HDD.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task2/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task2/Pc.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task2/RAM.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task3/ATM.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/task3/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_1_Task_1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hometask_8_1_Task_1/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +53,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager">
     <configuration name="HomeWork" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HomeWork" />
       <module name="lesson_2" />
@@ -130,7 +124,7 @@
       <workItem from="1685792709026" duration="2304000" />
       <workItem from="1686240923744" duration="4428000" />
       <workItem from="1686261343645" duration="1000" />
-      <workItem from="1686298132146" duration="20286000" />
+      <workItem from="1686298132146" duration="24048000" />
     </task>
     <servers />
   </component>
