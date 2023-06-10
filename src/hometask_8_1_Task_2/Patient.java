@@ -3,17 +3,14 @@ public class Patient {
     private String name;
     private int age;
     private int weight;
-    protected int nameOfTheDisease;
-    public Patient(String name, int age, int weight, int nameOfTheDisease){
+    public Patient(String name, int age, int weight){
         this.name = name;
         this.age = age;
         this.weight = weight;
-        this.nameOfTheDisease = nameOfTheDisease;
     }
     public String toString(){
-        return "Patient name: " + this.name +
-                "Patient's age: " + this.age +
-                "Patient's weight: " + this.weight +
-                "Patient's disease: " + this.nameOfTheDisease;
+        return "\nPatient name: " + this.name +
+                "\nPatient's age: " + this.age +
+                "\nPatient's weight: " + this.weight;
     }
 }

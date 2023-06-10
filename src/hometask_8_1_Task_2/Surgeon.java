@@ -1,22 +1,16 @@
 package hometask_8_1_Task_2;
-public class Surgeon {
-    private String name;
-    private int experience;
-    private String post;
-    private int workingHours;
-    public Surgeon(String name, int experience, String post, int workingHours){
-        this.name = name;
-        this.experience = experience;
-        this.post = post;
-        this.workingHours = workingHours;
+public class Surgeon extends Doctor {
+    public Surgeon(String name, int experience, String post, int workingHours) {
+        super(name, experience, post, workingHours);
     }
     public String toString(){
-        return "\nName surgeon: " + this.name +
-                "\nSurgeon's experience: " + this.experience +
-                "\nPosition of the surgeon: " + this.post +
-                "\nSurgeon's working hours per week: " + this.workingHours;
+        return "Your doctor: \n" +
+                "Name surgeon: " + super.getName()+
+                "\nSurgeon's experience: " + super.getExperience() +
+                "\nPosition of the surgeon: " + super.getPost() +
+                "\nSurgeon's working hours per week: " + super.getWorkingHours();
     }
     public String toHeal(){
-        return "Stop the bleeding and set the leg";
+        return "Treatment plan: stop the bleeding and set the leg\n";
     }
 }

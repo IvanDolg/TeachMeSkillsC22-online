@@ -1,22 +1,16 @@
 package hometask_8_1_Task_2;
-public class Dentist {
-    private String name;
-    private int experience;
-    private String post;
-    private int workingHours;
-    public Dentist(String name, int experience, String post, int workingHours){
-        this.name = name;
-        this.experience = experience;
-        this.post = post;
-        this.workingHours = workingHours;
+public class Dentist extends Doctor{
+    public Dentist(String name, int experience, String post, int workingHours) {
+        super(name, experience, post, workingHours);
     }
     public String toString(){
-        return "\nName dentist: " + this.name +
-                "\nDentist's experience: " + this.experience +
-                "\nPosition of the dentist: " + this.post +
-                "\nDentist's working hours per week: " + this.workingHours;
+        return "Your doctor \n" +
+                "Name dentist: " + super.getName() +
+                "\nDentist's experience: " + super.getExperience() +
+                "\nPosition of the dentist: " + super.getPost() +
+                "\nDentist's working hours per week: " + super.getWorkingHours();
     }
     public String toHeal(){
-        return "Find a bad tooth, clean and seal it";
+        return "Treatment plan: find a bad tooth, clean and seal it\n";
     }
 }

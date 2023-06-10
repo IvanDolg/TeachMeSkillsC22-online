@@ -1,22 +1,16 @@
 package hometask_8_1_Task_2;
-public class Therapist {
-    private String name;
-    private int experience;
-    private String post;
-    private int workingHours;
-    public Therapist(String name, int experience, String post, int workingHours){
-        this.name = name;
-        this.experience = experience;
-        this.post = post;
-        this.workingHours = workingHours;
+public class Therapist extends Doctor {
+    public Therapist(String name, int experience, String post, int workingHours) {
+        super(name, experience, post, workingHours);
     }
     public String toString(){
-        return "\nName therapist: " + this.name +
-                "\nTherapist's experience: " + this.experience +
-                "\nPosition of the therapist: " + this.post +
-                "\nTherapist's working hours per week: " + this.workingHours;
+        return "Your doctor: \n" +
+                "Name therapist: " + super.getName() +
+                "\nTherapist's experience: " + super.getExperience() +
+                "\nPosition of the therapist: " + super.getPost() +
+                "\nTherapist's working hours per week: " + super.getWorkingHours();
     }
     public String toHeal(){
-        return "Check the temperature and prescribe medications";
+        return "Treatment plan: check the temperature and prescribe medications\n";
     }
 }

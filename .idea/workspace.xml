@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="51007435-8f9c-4797-b636-a60be43caad3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_1_Task_2/Clinic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hometask_8_1_Task_2/Clinic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_1_Task_2/Dentist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hometask_8_1_Task_2/Dentist.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hometask_8_1_Task_2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hometask_8_1_Task_2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_1_Task_2/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hometask_8_1_Task_2/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_1_Task_2/Surgeon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hometask_8_1_Task_2/Surgeon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_1_Task_2/Therapist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hometask_8_1_Task_2/Therapist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_1_Task_2/TreatmentPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hometask_8_1_Task_2/TreatmentPlan.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +130,8 @@
       <workItem from="1685792709026" duration="2304000" />
       <workItem from="1686240923744" duration="4428000" />
       <workItem from="1686261343645" duration="1000" />
-      <workItem from="1686298132146" duration="29448000" />
+      <workItem from="1686298132146" duration="29659000" />
+      <workItem from="1686347747847" duration="8418000" />
     </task>
     <servers />
   </component>
