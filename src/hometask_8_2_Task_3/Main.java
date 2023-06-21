@@ -2,7 +2,16 @@ package hometask_8_2_Task_3;
 
 public class Main {
     public static void main(String[] args) {
+        Register register = new Register();
+        SupplyContract supplyContract = new SupplyContract(123, 23,"doc", 11);
+        ContractWithEmployee contractWithEmployee = new ContractWithEmployee(124, 22, 23, "Ivan");
+        FinancialInvoice financialInvoice = new FinancialInvoice(125, 24, 222, 33);
 
+        register.providingInformation(supplyContract);
+        System.out.println("--------------------------------------------------------");
+        register.providingInformation(contractWithEmployee);
+        System.out.println("--------------------------------------------------------");
+        register.providingInformation(financialInvoice);
     }
     //3 Создать систему для учета документов. Создать класс Регистр, который будет иметь методы:
     //- сохранения документа в регистре
@@ -24,6 +33,7 @@ public class Main {
     //- Дата документа
     //- Номер документа
     //- Код департамента
+
     //- Класс регистр должен содержать внутри себя массив и при добавлении документа
     //в регистр этот добавляемый документ должен добавляться в массив;
     //- Массив для класса регистра должен быть размером 10;
