@@ -1,6 +1,6 @@
 package hometask_8_2_Task_3;
 
-public class ContractWithEmployee extends Document{
+public class ContractWithEmployee extends Document {
     private int contractEndDate;
     private String employeeName;
     public  ContractWithEmployee () {}

@@ -1,6 +1,6 @@
 package hometask_8_2_Task_3;
 
-public class SupplyContract extends Document{
+public class SupplyContract extends Document {
     private String typeOfGoods;
     private int numberOfProducts;
     public SupplyContract(){}

@@ -1,16 +1,19 @@
 package hometask_8_2_Task_3;
 
 public class Register implements RegisterMethods {
-    private Document[] document = new Document[10];
+    Document[] documents = new Document[10];
+    private int index;
     @Override
-    public void savingDocument(Document document) {
-
+    public String savingDocument(Document document) {
+       if (documents.length != index){
+           System.out.println("The data was recorded");
+       }else {
+           System.out.println("No data was recorded");
+       }
+        return null;
     }
-
     @Override
     public void providingInformation(Document document) {
         document.getInfo();
     }
-    //- сохранения документа в регистре
-    //- предоставление информации о документе
 }

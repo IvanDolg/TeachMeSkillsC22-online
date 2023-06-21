@@ -1,6 +1,6 @@
 package hometask_8_2_Task_3;
 
-public class FinancialInvoice extends Document{
+public class FinancialInvoice extends Document {
     private int totalAmountForTheMonth;
     private int departmentCode;
     public FinancialInvoice () {}

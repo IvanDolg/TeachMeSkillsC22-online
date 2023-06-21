@@ -9,6 +9,7 @@ public abstract class Document {
     public Document(int documentNumber, String ft){
         this.documentNumber = documentNumber;
         this.documentDate = ft;
+
     }
     public int getDocumentNumber() {
         return documentNumber;
