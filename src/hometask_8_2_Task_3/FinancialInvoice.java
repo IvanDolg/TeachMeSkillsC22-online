@@ -3,7 +3,8 @@ package hometask_8_2_Task_3;
 public class FinancialInvoice extends Document{
     private int totalAmountForTheMonth;
     private int departmentCode;
-    public FinancialInvoice(int documentNumber, int documentDate, int totalAmountForTheMonth, int departmentCode) {
+    public FinancialInvoice () {}
+    public FinancialInvoice(int documentNumber, String documentDate, int totalAmountForTheMonth, int departmentCode) {
         super(documentNumber, documentDate);
         this.totalAmountForTheMonth = totalAmountForTheMonth;
         this.departmentCode = departmentCode;
