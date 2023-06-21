@@ -4,9 +4,11 @@ package Task1;
         координат.
         Создайте класс, который описывает вектор в трехмерной системе
         координат.
+
         У каждого класса должны быть:
         - конструктор с параметрами в виде списка координат (например, x,
         y, z);
+
         - метод, вычисляющий длину вектора. Корень можно посчитать с
         помощью Math.sqrt();
         - метод, вычисляющий скалярное произведение;
@@ -14,8 +16,10 @@ package Task1;
         - метод разности векторов;
         - статический метод, который принимает целое число N, и
         возвращает массив случайных векторов размером N.
+
         Предусмотреть метод сравнение векторов.
         Предусмотреть метод для вывода информации о векторе.
+
         Каждый из классов должен иметь константу, содержащею описание
         вектора.
         Например, "Это вектор для двумерной системы координат".
@@ -24,6 +28,10 @@ package Task1;
 
 public class Main {
     public static void main(String[] args) {
+        TwoDimensionalVector twoDimensionalVector = new TwoDimensionalVector(3,5);
+        ThreeDimensionalVector threeDimensionalVector = new ThreeDimensionalVector(5,6,7);
 
+        System.out.println(twoDimensionalVector);
+        System.out.println(threeDimensionalVector);
     }
 }
