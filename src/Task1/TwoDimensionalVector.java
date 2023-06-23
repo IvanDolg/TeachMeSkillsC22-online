@@ -31,8 +31,17 @@ public class TwoDimensionalVector implements VectorMethods{
         }
         return twoDimensionalVectors;
     }
-    public void vectorComparison() {
-
+    public void vectorComparison(TwoDimensionalVector twoDimensionalVector, TwoDimensionalVector twoDimensionalVector1) {
+        if (twoDimensionalVector.firstCoordinate > twoDimensionalVector1.firstCoordinate){
+            System.out.println("The first element of the first vector is larger than the first element of the second vector");
+        } else {
+            System.out.println("The first element of the second vector is larger than the first element of the first vector");
+        }
+        if (twoDimensionalVector.secondCoordinate  > twoDimensionalVector1.secondCoordinate){
+            System.out.println("The second element of the first vector is larger than the second element of the second vector");
+        } else {
+            System.out.println("The second element of the second vector is larger than the second element of the first vector");
+        }
     }
     @Override
     public String toString() {

@@ -36,8 +36,22 @@ public class ThreeDimensionalVector implements VectorMethods{
         }
         return threeDimensionalVectors;
     }
-    public void vectorComparison() {
-
+    public void vectorComparison(ThreeDimensionalVector threeDimensionalVector, ThreeDimensionalVector threeDimensionalVector1) {
+        if (threeDimensionalVector.firstCoordinate > threeDimensionalVector1.firstCoordinate){
+            System.out.println("The first element of the first vector is larger than the first element of the second vector");
+        } else {
+            System.out.println("The first element of the second vector is larger than the first element of the first vector");
+        }
+        if (threeDimensionalVector.secondCoordinate  > threeDimensionalVector1.secondCoordinate){
+            System.out.println("The second element of the first vector is larger than the second element of the second vector");
+        } else {
+            System.out.println("The second element of the second vector is larger than the second element of the first vector");
+        }
+        if (threeDimensionalVector.thirdCoordinate > threeDimensionalVector1.thirdCoordinate){
+            System.out.println("The third element of the first vector is larger than the third element of the second vector");
+        } else {
+            System.out.println("The third element of the second vector is larger than the third element of the first vector");
+        }
     }
     @Override
     public String toString() {
@@ -51,6 +65,5 @@ public class ThreeDimensionalVector implements VectorMethods{
         double result;
         result = Math.sqrt(Math.pow(firstCoordinate, 2) + Math.pow(secondCoordinate, 2) + Math.pow(thirdCoordinate, 2));
         System.out.println("Vector length: " + result);
-
     }
 }
