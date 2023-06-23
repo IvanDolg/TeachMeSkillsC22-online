@@ -1,47 +1,49 @@
 package Task1;
 
 public class TwoDimensionalVector implements VectorMethods{
-    private int firstCoordinate;
-    private int secondCoordinate;
+    private double firstCoordinate;
+    private double secondCoordinate;
     static String information = "This is a vector for a two-dimensional coordinate system";
-    public TwoDimensionalVector(int firstCoordinate, int secondCoordinate){
+    public TwoDimensionalVector(double firstCoordinate, double secondCoordinate){
         this.firstCoordinate = firstCoordinate;
         this.secondCoordinate = secondCoordinate;
     }
+    public void scalarProduct(TwoDimensionalVector twoDimensionalVector, TwoDimensionalVector twoDimensionalVector1) {
+        double result;
+        result = (twoDimensionalVector.firstCoordinate * twoDimensionalVector1.firstCoordinate +
+                twoDimensionalVector.secondCoordinate * twoDimensionalVector1.secondCoordinate);
+        System.out.println("Vector scalar product: " + result);
+    }
+    public void additionOfVectors(TwoDimensionalVector twoDimensionalVector, TwoDimensionalVector twoDimensionalVector1) {
+        double x = twoDimensionalVector.firstCoordinate + twoDimensionalVector1.firstCoordinate;
+        double y = twoDimensionalVector.secondCoordinate + twoDimensionalVector1.secondCoordinate;
+        System.out.println("Coordinates after addition: " + "(" + x + ", " + y + ")");
+    }
+    public void vectorDifference(TwoDimensionalVector twoDimensionalVector, TwoDimensionalVector twoDimensionalVector1) {
+        double x = twoDimensionalVector.firstCoordinate - twoDimensionalVector1.firstCoordinate;
+        double y = twoDimensionalVector.secondCoordinate - twoDimensionalVector1.secondCoordinate;
+        System.out.println("Coordinates after  subtraction: " + "(" + x + ", " + y + ")");
+    }
+    public static TwoDimensionalVector[] staticMethod(int number) {
+        TwoDimensionalVector[] twoDimensionalVectors = new TwoDimensionalVector[number];
+        for (int i = 0; i < number; i++){
+            twoDimensionalVectors[i] = new TwoDimensionalVector(Math.random(), Math.random());
+        }
+        return twoDimensionalVectors;
+    }
+    public void vectorComparison() {
+
+    }
     @Override
     public String toString() {
-        return "---------------------------------------------" +
-                "\n" + information + ", its coordinates:" +
+        return "\n" + information + ", its coordinates:" +
                 "\nx: " + this.firstCoordinate +
                 "\ny: " + this.secondCoordinate;
     }
     @Override
     public void vectorLength() {
-
-    }
-
-    @Override
-    public void scalarProduct() {
-
-    }
-
-    @Override
-    public void additionOfVectors() {
-
-    }
-
-    @Override
-    public void vectorDifference() {
-
-    }
-
-    @Override
-    public void staticMethod() {
-
-    }
-
-    @Override
-    public void vectorComparison() {
-
+        double result;
+        result = Math.sqrt(Math.pow(firstCoordinate, 2) + Math.pow(secondCoordinate, 2));
+        System.out.println("Vector length: " + result);
     }
 }

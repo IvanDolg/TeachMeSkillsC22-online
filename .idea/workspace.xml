@@ -7,6 +7,9 @@
     <list default="true" id="51007435-8f9c-4797-b636-a60be43caad3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Task1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task1/ThreeDimensionalVector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task1/ThreeDimensionalVector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task1/TwoDimensionalVector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task1/TwoDimensionalVector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task1/VectorMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task1/VectorMethods.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,22 +43,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "homework__8",
-    "last_opened_file_path": "C:/Users/vvvvv/OneDrive/Рабочий стол/Java junior/TeachMeSkillsC22-online",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "inlay.hints",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;homework__8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/vvvvv/OneDrive/Рабочий стол/Java junior/TeachMeSkillsC22-online&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="hometask_8_2_Task_3" />
@@ -138,6 +141,8 @@
       <workItem from="1687278469835" duration="4655000" />
       <workItem from="1687347941614" duration="11914000" />
       <workItem from="1687380800727" duration="4980000" />
+      <workItem from="1687385856743" duration="129000" />
+      <workItem from="1687533856571" duration="7465000" />
     </task>
     <servers />
   </component>
