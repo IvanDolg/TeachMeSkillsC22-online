@@ -4,12 +4,16 @@ public class ThreeDimensionalVector implements VectorMethods{
     private double firstCoordinate;
     private double secondCoordinate;
     private double thirdCoordinate;
+
+    // A constant containing a description of the vector.
     static String information = "This is a vector for a three-dimensional coordinate system";
     public ThreeDimensionalVector(double firstCoordinate, double secondCoordinate, double thirdCoordinate) {
         this.firstCoordinate = firstCoordinate;
         this.secondCoordinate = secondCoordinate;
         this.thirdCoordinate = thirdCoordinate;
     }
+
+    /* A method that calculates the scalar product. */
     public void scalarProduct(ThreeDimensionalVector threeDimensionalVector, ThreeDimensionalVector threeDimensionalVector1) {
         double result;
         result = (threeDimensionalVector.firstCoordinate * threeDimensionalVector1.firstCoordinate +
@@ -17,18 +21,24 @@ public class ThreeDimensionalVector implements VectorMethods{
                 threeDimensionalVector.thirdCoordinate * threeDimensionalVector1.thirdCoordinate);
         System.out.println("Vector scalar product: " + result);
     }
+
+    /* Vector addition method. */
     public void additionOfVectors(ThreeDimensionalVector threeDimensionalVector, ThreeDimensionalVector threeDimensionalVector1) {
         double x = threeDimensionalVector.firstCoordinate + threeDimensionalVector1.firstCoordinate;
         double y = threeDimensionalVector.secondCoordinate + threeDimensionalVector1.secondCoordinate;
         double z = threeDimensionalVector.thirdCoordinate + threeDimensionalVector1.thirdCoordinate;
         System.out.println("Coordinates after addition: " + "(" + x + ", " + y + ", " + z + ")");
     }
+
+    /* Vector difference method. */
     public void vectorDifference(ThreeDimensionalVector threeDimensionalVector, ThreeDimensionalVector threeDimensionalVector1) {
         double x = threeDimensionalVector.firstCoordinate - threeDimensionalVector1.firstCoordinate;
         double y = threeDimensionalVector.secondCoordinate - threeDimensionalVector1.secondCoordinate;
         double z = threeDimensionalVector.thirdCoordinate - threeDimensionalVector1.thirdCoordinate;
         System.out.println("Coordinates after  subtraction: " + "(" + x + ", " + y + ", " + z + ")");
     }
+
+    /* A static method that takes an integer N, and returns an array of random vectors of size N. */
     public static ThreeDimensionalVector[] staticMethod(int number) {
         ThreeDimensionalVector[] threeDimensionalVectors = new ThreeDimensionalVector[number];
         for (int i = 0; i < number; i++) {
@@ -36,6 +46,8 @@ public class ThreeDimensionalVector implements VectorMethods{
         }
         return threeDimensionalVectors;
     }
+
+    /* Vector comparison method. */
     public void vectorComparison(ThreeDimensionalVector threeDimensionalVector, ThreeDimensionalVector threeDimensionalVector1) {
         if (threeDimensionalVector.firstCoordinate > threeDimensionalVector1.firstCoordinate){
             System.out.println("The first element of the first vector is larger than the first element of the second vector");
@@ -59,6 +71,8 @@ public class ThreeDimensionalVector implements VectorMethods{
             System.out.println("The third element of the first vector is equal to the third element of the second vector");
         }
     }
+
+    /* A method for displaying information about a vector. */
     @Override
     public String toString() {
         return "\n" + information + ", its coordinates:" +
@@ -66,6 +80,8 @@ public class ThreeDimensionalVector implements VectorMethods{
                 "\ny: " + this.secondCoordinate +
                 "\nz: " + this.thirdCoordinate;
     }
+
+    /* The method that calculates the length of the vector. */
     @Override
     public void vectorLength() {
         double result;
