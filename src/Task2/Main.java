@@ -19,5 +19,12 @@ public class Main {
 
         System.out.println("\nVector difference \n" + vectors[0].vectorDifference(vectors[1]));
         System.out.println("\nVector difference \n" + vectors[1].vectorDifference(vectors[2]));
+
+        System.out.println("--------------------------------");
+        System.out.println("Vector comparison: \n");
+        vectors[0].vectorComparison(vectors[1]);
+        System.out.println("--------------------------------");
+        System.out.println("Vector comparison: \n");
+        vectors[1].vectorComparison(vectors[2]);
     }
 }

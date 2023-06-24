@@ -41,6 +41,31 @@ public class Vector {
         return  new Vector(x - vector.x, y - vector.y, z - vector.z);
     }
 
+    /* Vector comparison method. */
+    public Vector vectorComparison(Vector vector){
+        if (x > vector.x){
+            System.out.println("The first element of the first vector is larger than the first element of the second vector");
+        } else if (x < vector.x) {
+            System.out.println("The first element of the second vector is larger than the first element of the first vector");
+        } else if (x == vector.x){
+            System.out.println("The first element of the first vector is equal to the first element of the second vector");
+        }
+        if (y > vector.y){
+            System.out.println("The second element of the first vector is larger than the second element of the second vector");
+        } else if (y < vector.y) {
+            System.out.println("The second element of the second vector is larger than the second element of the first vector");
+        } else if (y == vector.y){
+            System.out.println("The second element of the first vector is equal to the second element of the second vector");
+        } if (z > vector.z){
+            System.out.println("The third element of the first vector is larger than the third element of the second vector");
+        } else if (z < vector.z) {
+            System.out.println("The third element of the second vector is larger than the third element of the first vector");
+        } else if (z == vector.z){
+            System.out.println("The third element of the first vector is equal to the third element of the second vector");
+        }
+        return vector;
+    }
+
     /* A method for displaying information about a vector. */
     @Override
     public String toString() {
