@@ -39,18 +39,24 @@ public class ThreeDimensionalVector implements VectorMethods{
     public void vectorComparison(ThreeDimensionalVector threeDimensionalVector, ThreeDimensionalVector threeDimensionalVector1) {
         if (threeDimensionalVector.firstCoordinate > threeDimensionalVector1.firstCoordinate){
             System.out.println("The first element of the first vector is larger than the first element of the second vector");
-        } else {
+        } else if (threeDimensionalVector.firstCoordinate < threeDimensionalVector1.firstCoordinate){
             System.out.println("The first element of the second vector is larger than the first element of the first vector");
+        } else if (threeDimensionalVector.firstCoordinate == threeDimensionalVector1.firstCoordinate) {
+            System.out.println("The first element of the first vector is equal to the first element of the second vector");
         }
         if (threeDimensionalVector.secondCoordinate  > threeDimensionalVector1.secondCoordinate){
             System.out.println("The second element of the first vector is larger than the second element of the second vector");
-        } else {
+        } else if (threeDimensionalVector.secondCoordinate  < threeDimensionalVector1.secondCoordinate){
             System.out.println("The second element of the second vector is larger than the second element of the first vector");
+        } else if (threeDimensionalVector.secondCoordinate  == threeDimensionalVector1.secondCoordinate) {
+            System.out.println("The second element of the first vector is equal to the second element of the second vector");
         }
         if (threeDimensionalVector.thirdCoordinate > threeDimensionalVector1.thirdCoordinate){
             System.out.println("The third element of the first vector is larger than the third element of the second vector");
-        } else {
+        } else if (threeDimensionalVector.thirdCoordinate < threeDimensionalVector1.thirdCoordinate){
             System.out.println("The third element of the second vector is larger than the third element of the first vector");
+        } else if (threeDimensionalVector.thirdCoordinate == threeDimensionalVector1.thirdCoordinate) {
+            System.out.println("The third element of the first vector is equal to the third element of the second vector");
         }
     }
     @Override
