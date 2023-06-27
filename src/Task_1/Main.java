@@ -28,5 +28,6 @@ public class Main {
         System.out.println(line.printFirstTwoBlocks("1234-erf-5678-tyu-9t0p"));
         System.out.println(line.replacingLetters("1234-erf-5678-tyu-9t0p"));
         line.printOnlyLetter("1234-Erf-5678-tYu-9P0P");
+        line.useStringBuilder("1234-Erf-5678-tYu-9P0P");
     }
 }
