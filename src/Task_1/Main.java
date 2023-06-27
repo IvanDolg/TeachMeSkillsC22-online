@@ -9,16 +9,7 @@ package Task_1;
         *** (каждая буква заменятся на *).
         - Вывести на экран только одни буквы из номера документа в формате
         yyy/yyy/y/y в нижнем регистре.
-        -
-        Вывести
-        на
-        экран
-        буквы
-        из
-        номера
-        документа
-        в
-        формате
+        - Вывести на экран буквы из номера документа в формате
         "Letters:yyy/yyy/y/y" в верхнем регистре(реализовать с помощью
         класса StringBuilder).
         - Проверить содержит ли номер документа последовательность abc и
@@ -35,5 +26,7 @@ public class Main {
     public static void main(String[] args) {
         Line line = new Line();
         System.out.println(line.printFirstTwoBlocks("1234-erf-5678-tyu-9t0p"));
+        System.out.println(line.replacingLetters("1234-erf-5678-tyu-9t0p"));
+        line.printOnlyLetter("1234-Erf-5678-tYu-9P0P");
     }
 }
