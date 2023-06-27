@@ -6,13 +6,35 @@
   <component name="ChangeListManager">
     <list default="true" id="51007435-8f9c-4797-b636-a60be43caad3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hometask_8_2_Task_3/ContractWithEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hometask_8_2_Task_3/ContractWithEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hometask_8_2_Task_3/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hometask_8_2_Task_3/Document.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hometask_8_2_Task_3/FinancialInvoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hometask_8_2_Task_3/FinancialInvoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hometask_8_2_Task_3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hometask_8_2_Task_3/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hometask_8_2_Task_3/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hometask_8_2_Task_3/Register.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hometask_8_2_Task_3/RegisterMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hometask_8_2_Task_3/RegisterMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hometask_8_2_Task_3/SupplyContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hometask_8_2_Task_3/SupplyContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task_4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task_4/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_1_Task_1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_1_Task_1/Phone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_1_Task_2/Clinic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_1_Task_2/Dentist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_1_Task_2/Doctor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_1_Task_2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_1_Task_2/Patient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_1_Task_2/Surgeon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_1_Task_2/Therapist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_1_Task_2/TreatmentPlan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_2_Task_1/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_2_Task_1/Figure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_2_Task_1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_2_Task_1/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_2_Task_1/Triangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_2_Task_2/Accountant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_2_Task_2/Data.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_2_Task_2/Director.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_2_Task_2/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_2_Task_2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_2_Task_2/Worker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_2_Task_3/ContractWithEmployee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_2_Task_3/Document.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_2_Task_3/FinancialInvoice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_2_Task_3/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_2_Task_3/Register.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_2_Task_3/RegisterMethods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hometask_8_2_Task_3/SupplyContract.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,15 +44,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="homework_9" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -65,7 +87,7 @@
       <recent name="hometask_8_2_Task_3" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.HomeWork">
     <configuration name="HomeWork" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HomeWork" />
       <module name="lesson_2" />
@@ -141,6 +163,7 @@
       <workItem from="1686395823300" duration="5233000" />
       <workItem from="1687278469835" duration="4655000" />
       <workItem from="1687347941614" duration="11139000" />
+      <workItem from="1687864597595" duration="300000" />
     </task>
     <servers />
   </component>
