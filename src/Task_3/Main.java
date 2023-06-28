@@ -1,8 +1,9 @@
 package Task_3;
 
-/* Дана строка произвольной длины с произвольными словами.
-        Найти самое короткое слово в строке и вывести его на экран.
-        Найти самое длинное слово в строке и вывести его на экран.
-        Если таких слов несколько, то вывести последнее из них.*/
 public class Main {
+    public static void main(String[] args) {
+        LineMethod lineMethod = new LineMethod();
+        lineMethod.shortesWtord("Ivan Dolgolaptev hi worldrrrrrr.");
+        lineMethod.longestWord("Ivan Dolgolaptev hi wo");
+    }
 }
