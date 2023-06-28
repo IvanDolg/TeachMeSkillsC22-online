@@ -39,7 +39,7 @@ public class Line {
 /*    Let's display the letters from the document number in the format "Letters:yyy/yyy/y/y"
       in uppercase (implemented using the StringBuilder class).*/
     public static void useStringBuilder(String documentNumber){
-        System.out.print("\nLetter: ");
+        System.out.print("Letter: ");
         documentNumber = documentNumber.toUpperCase();
         for (int i = 0; i < documentNumber.length(); i++) {
             if (Character.isLetter(documentNumber.charAt(i))) {
@@ -53,5 +53,22 @@ public class Line {
                 }
             }
         }
+    }
+
+/*    Let's check whether the document number contains the sequence abc and output the message contains or not.*/
+    public static void checkSequnce(String documentNumber){
+        System.out.println("Contains sequence 'abc': " + documentNumber.toLowerCase().contains("abc") );
+    }
+
+/*    Let's check if the document number starts with the sequence 555*/
+    public static void checkSequnce1(String documentNumber){
+        String[] parts = documentNumber.split("-");
+        System.out.println("Contains sequence '555': " + parts[0].contains("555"));
+    }
+
+/*    let's check whether the document number ends in a sequence 1a2b.*/
+    public static void checkSequnce2(String documentNumber){
+        String[] parts = documentNumber.split("-");
+        System.out.println("Contains sequence '1a2b': " + parts[4].contains("1a2b"));
     }
 }
