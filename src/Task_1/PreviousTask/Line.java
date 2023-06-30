@@ -1,4 +1,4 @@
-package Task_1;
+package Task_1.PreviousTask;
 
 public class Line {
 
