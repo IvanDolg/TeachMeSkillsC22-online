@@ -1,21 +1,16 @@
 package Task_2;
 
-import Task_2.Exception.IncorrectLoginException;
-import Task_2.Exception.IncorrectPasswordException;
+/*      Улучшить предыдущее задание. А именно:
+
+        Валидные номера документов следует записать в один файл-отчет.
+
+        Невалидные номера документов следует записать в другой файл-отчет,
+
+        но после номеров документов следует добавить информацию о том,
+        почему этот документ невалиден.*/
 
 public class Main {
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-      try {
-          ExceptionOutput.checkLogin("IvanDol");
-      } catch (IncorrectLoginException e) {
-          throw new RuntimeException(e);
-      }
-
-      try {
-          ExceptionOutput.checkPassword("ivan2004");
-      } catch (IncorrectPasswordException e) {
-          throw new RuntimeException(e);
-      }
-  }
+    }
 }

@@ -1,33 +1,19 @@
 package Task_1;
 
-import Task_1.Execeptions.CheckingForCounsistency1;
-import Task_1.Execeptions.CheckingForCounsistency2;
-import Task_1.Execeptions.CheckingForCounsistency3;
+/*      Допустим есть txt файл с номерами документов.
+
+        Номером документа является строка, состоящая из букв и цифр(без служебных символов).
+        Пусть этот файл содержит каждый номер документа с новой строки и в строке никакой другой информации, только номер документа.
+
+        Валидный номер документа должен иметь длину 15 символов и начинаться с последовательности docnum(далее любая
+        последовательность букв/цифр) или contract(далее любая последовательность букв/цифр).
+
+        Написать программу для чтения информации из входного файла - путь к входному файлу должен задаваться через консоль.
+
+        Программа должна проверять номера документов на валидность.*/
 
 public class Main {
     public static void main(String[] args) {
 
-        String str = "555-erf-5678-abc-1a2b";
-
-/*      Checking for the content of the abc sequence.  */
-        try {
-            ExceptionOutput.checkForTheContrnts(str, "abc");
-        } catch (CheckingForCounsistency1 ex) {
-            throw new RuntimeException(ex);
-        }
-
-/*      Checking for the presence of the sequence 555 at the beginning of the document number. */
-        try {
-            ExceptionOutput.checkingForSequenceOfNumbers(str, "555");
-        } catch (CheckingForCounsistency2 e) {
-            throw new RuntimeException(e);
-        }
-
-/*      Checking for the presence of the sequence 1a2b at the end of the document number. */
-        try {
-            ExceptionOutput.checkingForTheEndOfSequence(str, "1a2b");
-        } catch (CheckingForCounsistency3 e) {
-            throw new RuntimeException(e);
-        }
     }
 }
