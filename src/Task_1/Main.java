@@ -12,8 +12,10 @@ package Task_1;
 
         Программа должна проверять номера документов на валидность.*/
 
+import static Task_1.Exception.DocNumberFile.getOutputStream;
+
 public class Main {
     public static void main(String[] args) {
-
+        getOutputStream();
     }
 }
