@@ -1,7 +1,7 @@
 package Task_1.Exception;
 
 public class DocNumException extends Exception{
-    public DocNumException(){
-        super();
+    public DocNumException(String str){
+        super(str);
     }
 }
