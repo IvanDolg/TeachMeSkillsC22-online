@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51007435-8f9c-4797-b636-a60be43caad3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Task_1/DocNumberFileMistakes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task_1/Doc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task_1/Doc.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task_1/Exception/DocNumException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task_1/Exception/DocNumException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task_1/Exception/DocNumberFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task_1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task_1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task_2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task_2/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,23 +40,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/vvvvv/OneDrive/Рабочий стол/Java junior/TeachMeSkillsC22-online&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/vvvvv/OneDrive/Рабочий стол/Java junior/TeachMeSkillsC22-online/src/Task_2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="hometask_8_2_Task_3" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\vvvvv\OneDrive\Рабочий стол\Java junior\TeachMeSkillsC22-online\src\Task_2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vvvvv\OneDrive\Рабочий стол\Java junior\TeachMeSkillsC22-online\src\Task_2\DocFile" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Task_2" />
+      <recent name="Task_2.Exception" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Task_1.Main">
@@ -157,7 +163,7 @@
       <workItem from="1688046804597" duration="5474000" />
       <workItem from="1688086023383" duration="325000" />
       <workItem from="1688086360637" duration="5204000" />
-      <workItem from="1688162059237" duration="8978000" />
+      <workItem from="1688162059237" duration="10558000" />
     </task>
     <servers />
   </component>

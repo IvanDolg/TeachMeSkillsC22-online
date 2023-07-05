@@ -9,8 +9,11 @@ package Task_2;
         но после номеров документов следует добавить информацию о том,
         почему этот документ невалиден.*/
 
+import static Task_2.OutputDocNumver.getOutputStream;
+
 public class Main {
     public static void main(String[] args) {
-
+        getOutputStream();
     }
 }
+
