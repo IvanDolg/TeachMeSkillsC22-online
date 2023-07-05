@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="51007435-8f9c-4797-b636-a60be43caad3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task_2/DocFile/Doc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task_2/DocFile/Doc.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task_2/DocFile/NewDoc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task_2/DocFile/NewDoc.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task_2/DocNumberFileMistakes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task_2/DocNumberFileMistakes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task_2/Exception/BeginningOfTheLine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task_2/Exception/DocNumException.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Task_2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task_2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task_2/OutputDocNumver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task_2/OutputDocNumver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +75,7 @@
       <recent name="Task_2.Exception" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Task_1.Main">
+  <component name="RunManager">
     <configuration name="HomeWork" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HomeWork" />
       <module name="lesson_2" />
@@ -163,7 +169,7 @@
       <workItem from="1688046804597" duration="5474000" />
       <workItem from="1688086023383" duration="325000" />
       <workItem from="1688086360637" duration="5204000" />
-      <workItem from="1688162059237" duration="10558000" />
+      <workItem from="1688162059237" duration="14978000" />
     </task>
     <servers />
   </component>
