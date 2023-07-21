@@ -4,9 +4,6 @@ import Task_1.Exception.CounterException;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Scanner;
 
 /*      Вернемся к домашнему заданию занятия номер 12 и модифицируем его.
@@ -82,17 +79,12 @@ public class Main {
             System.out.println("Ошибка при создании файла: " + e.getMessage());
         }
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws CounterException {
         while (true) {
             MyMenu();
 
             int counter = 0;
             counter = scanner().nextInt();
-            try {
-                DocNumberFileMistakes.NumberCheck(counter);
-            } catch (CounterException e) {
-                throw new RuntimeException(e);
-            }
 
             switch (counter) {
                 case 1:
@@ -110,6 +102,8 @@ public class Main {
                     System.out.println("End of the program");
                     System.exit(0);
                     break;
+                default:
+                    DocNumberFileMistakes.NumberCheck(counter);
             }
         }
     }
