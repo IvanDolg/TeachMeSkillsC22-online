@@ -1,6 +1,8 @@
 package Task_1;
 
-import static Task_1.OutputDocNumver.getOutputStream;
+import Task_1.Exception.CounterException;
+
+import java.util.Scanner;
 
 /*      Вернемся к домашнему заданию занятия номер 12 и модифицируем его.
 
@@ -50,7 +52,39 @@ import static Task_1.OutputDocNumver.getOutputStream;
         такую структуру и уже потом сделать цикл по этой структуре и записать
         всю информацию из этой мапы в файл-отчет.*/
 public class Main {
+    public static Scanner scanner(){
+        return new Scanner(System.in);
+    }
+    public static void MyMenu(){
+        System.out.print("1) Add a new file" +
+                "\n2) Add a new line to file" +
+                "\n3) Output file information" +
+                "\n4) Exit" +
+                "\n\nEnter what you want to do: ");
+    }
     public static void main(String[] args) {
-        getOutputStream();
+        MyMenu();
+
+        int counter = scanner().nextInt();
+        try {
+            DocNumberFileMistakes.NumberCheck(counter);
+        } catch (CounterException e) {
+            throw new RuntimeException(e);
+        }
+
+        while (true) {
+            switch (counter) {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    System.out.println("End of the program");
+                    System.exit(0);
+                    break;
+            }
+        }
     }
 }
