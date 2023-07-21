@@ -1,18 +1,15 @@
 package Task_1;
 
-import Task_1.Exception.BeginningOfTheLine;
-import Task_1.Exception.DocNumException;
-
 public class DocNumberFileMistakes {
 
-    public static boolean validationCheck(String str) throws BeginningOfTheLine {
+    public static boolean validationCheck(String str)  {
         if (str.startsWith("docnum") || str.startsWith("contract")){
             return true;
         }
         else return false;
     }
 
-    public static boolean CheckingForTheNumberOfLetters (String str) throws DocNumException {
+    public static boolean CheckingForTheNumberOfLetters (String str) {
         if (str.length() == 15) {
             return  true;
         }

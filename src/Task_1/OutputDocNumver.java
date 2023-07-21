@@ -1,8 +1,5 @@
 package Task_1;
 
-import Task_1.Exception.BeginningOfTheLine;
-import Task_1.Exception.DocNumException;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
@@ -35,10 +32,6 @@ public class OutputDocNumver {
             writeToFile(path1, validNumbers.toString());
             writeToFile(path2, invalidNumbers.toString());
         } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        } catch (BeginningOfTheLine e) {
-            throw new RuntimeException(e);
-        } catch (DocNumException e) {
             throw new RuntimeException(e);
         }
     }
