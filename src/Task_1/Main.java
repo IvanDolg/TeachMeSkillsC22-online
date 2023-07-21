@@ -2,6 +2,11 @@ package Task_1;
 
 import Task_1.Exception.CounterException;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Scanner;
 
 /*      Вернемся к домашнему заданию занятия номер 12 и модифицируем его.
@@ -62,23 +67,44 @@ public class Main {
                 "\n4) Exit" +
                 "\n\nEnter what you want to do: ");
     }
-    public static void main(String[] args) {
-        MyMenu();
+    private static void SaveFileName(){
+        String fileName = scanner().nextLine();
+        String folderPath = "src/Task_1";
+        File file = new File(folderPath, fileName);
 
-        int counter = scanner().nextInt();
         try {
-            DocNumberFileMistakes.NumberCheck(counter);
-        } catch (CounterException e) {
-            throw new RuntimeException(e);
+            if (file.createNewFile()) {
+                System.out.println("Файл успешно создан.");
+            } else {
+                System.out.println("Файл уже существует.");
+            }
+        } catch(IOException e) {
+            System.out.println("Ошибка при создании файла: " + e.getMessage());
         }
-
+    }
+    public static void main(String[] args) {
         while (true) {
+            MyMenu();
+
+            int counter = 0;
+            counter = scanner().nextInt();
+            try {
+                DocNumberFileMistakes.NumberCheck(counter);
+            } catch (CounterException e) {
+                throw new RuntimeException(e);
+            }
+
             switch (counter) {
                 case 1:
+                    System.out.print("Enter file name: ");
+                    SaveFileName();
                     break;
                 case 2:
+                    System.out.println("Hi");
                     break;
                 case 3:
+                    System.out.println("Ivan");
+
                     break;
                 case 4:
                     System.out.println("End of the program");
