@@ -4,6 +4,8 @@ import Task_1.Exception.CounterException;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.Scanner;
 
 /*      Вернемся к домашнему заданию занятия номер 12 и модифицируем его.
@@ -60,43 +62,53 @@ public class Main {
     public static void MyMenu(){
         System.out.print("1) Add a new file" +
                 "\n2) Add a new line to file" +
-                "\n3) Output file information" +
-                "\n4) Exit" +
+                "\n3) Delete file" +
+                "\n4) Output file information" +
+                "\n5) Exit" +
                 "\n\nEnter what you want to do: ");
     }
-    private static void SaveFileName(){
+    private static void SaveFile(){
         String fileName = scanner().nextLine();
         String folderPath = "src/Task_1";
         File file = new File(folderPath, fileName);
-
         try {
             if (file.createNewFile()) {
-                System.out.println("Файл успешно создан.");
+                System.out.println("File " + fileName + " successfully created");
             } else {
-                System.out.println("Файл уже существует.");
+                System.out.println("The file with name " + fileName + " already exists");
             }
         } catch(IOException e) {
-            System.out.println("Ошибка при создании файла: " + e.getMessage());
+            System.out.println(e.getMessage());
+        }
+    }
+    private static void DeleteFile() {
+        String fileName = scanner().nextLine();
+        String folderPath = "src/Task_1";
+
+        File file = new File(folderPath, fileName);
+        if (file.delete()) {
+            System.out.println("File " + fileName + " deleted successfully");
+        } else {
+            System.out.println("Failed to delete file with name: " + fileName);
         }
     }
     public static void main(String[] args) throws CounterException {
         while (true) {
             MyMenu();
 
-            int counter = 0;
-            counter = scanner().nextInt();
+            int counter = scanner().nextInt();
 
             switch (counter) {
                 case 1:
                     System.out.print("Enter file name: ");
-                    SaveFileName();
+                    SaveFile();
                     break;
                 case 2:
                     System.out.println("Hi");
                     break;
                 case 3:
-                    System.out.println("Ivan");
-
+                    System.out.print("Enter file name to delete: ");
+                    DeleteFile();
                     break;
                 case 4:
                     System.out.println("End of the program");
