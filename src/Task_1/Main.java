@@ -4,8 +4,13 @@ import Task_1.Exception.CounterException;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 /*      Вернемся к домашнему заданию занятия номер 12 и модифицируем его.
@@ -60,7 +65,7 @@ public class Main {
         return new Scanner(System.in);
     }
     public static void MyMenu(){
-        System.out.print("1) Add a new file" +
+        System.out.print("\n1) Add a new file" +
                 "\n2) Add a new line to file" +
                 "\n3) Delete file" +
                 "\n4) Output file information" +
@@ -92,10 +97,31 @@ public class Main {
             System.out.println("Failed to delete file with name: " + fileName);
         }
     }
-    public static void main(String[] args) throws CounterException {
+    private static  void AddDataToFile() throws IOException {
+        System.out.print("Write the name of the file you wont to save the data to: ");
+        String fileName = scanner().nextLine();
+        String folderPath = "src/Task_1";
+        File file = new File(folderPath, fileName);
+
+        List<String> list = new ArrayList<>();
+
+        System.out.print("\nEnter the number of data rows: ");
+        int amountOfData = scanner().nextInt();
+
+        System.out.println("\nEnter the data: ");
+        for (int i = 0; i < amountOfData; i++) {
+            list.add(scanner().nextLine());
+        }
+
+        System.out.println("\nYour entered data: ");
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i));
+            Files.write(file.toPath(), list, StandardCharsets.UTF_8);
+        }
+    }
+    public static void main(String[] args) throws CounterException, IOException {
         while (true) {
             MyMenu();
-
             int counter = scanner().nextInt();
 
             switch (counter) {
@@ -104,7 +130,7 @@ public class Main {
                     SaveFile();
                     break;
                 case 2:
-                    System.out.println("Hi");
+                    AddDataToFile();
                     break;
                 case 3:
                     System.out.print("Enter file name to delete: ");
