@@ -9,9 +9,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 /*      Вернемся к домашнему заданию занятия номер 12 и модифицируем его.
 
@@ -64,15 +62,17 @@ public class Main {
     public static Scanner scanner(){
         return new Scanner(System.in);
     }
-    public static void MyMenu(){
+    private static void MyMenu(){
         System.out.print("\n1) Add a new file" +
                 "\n2) Add a new line to file" +
-                "\n3) Delete file" +
+                "\n3) Validation check" +
                 "\n4) Output file information" +
-                "\n5) Exit" +
+                "\n5) Delete file" +
+                "\n6) Exit" +
                 "\n\nEnter what you want to do: ");
     }
     private static void SaveFile(){
+        System.out.print("Enter file name: ");
         String fileName = scanner().nextLine();
         String folderPath = "src/Task_1";
         File file = new File(folderPath, fileName);
@@ -87,6 +87,7 @@ public class Main {
         }
     }
     private static void DeleteFile() {
+        System.out.print("Enter file name to delete: ");
         String fileName = scanner().nextLine();
         String folderPath = "src/Task_1";
 
@@ -97,8 +98,8 @@ public class Main {
             System.out.println("Failed to delete file with name: " + fileName);
         }
     }
-    private static  void AddDataToFile() throws IOException {
-        System.out.print("Write the name of the file you wont to save the data to: ");
+    private static void AddDataToFile() throws IOException {
+        System.out.print("\nWrite the name of the file you wont to save the data to: ");
         String fileName = scanner().nextLine();
         String folderPath = "src/Task_1";
         File file = new File(folderPath, fileName);
@@ -119,6 +120,24 @@ public class Main {
             Files.write(file.toPath(), list, StandardCharsets.UTF_8);
         }
     }
+    private static void ReadInformation() {
+        System.out.print("\nWrite the name of the file you wont to read: ");
+        String fileName = scanner().nextLine();
+        String folderPath = "src/Task_1";
+        File file = new File(folderPath, fileName);
+
+        System.out.println("\nYour data: ");
+        try {
+            Scanner scanner = new Scanner(file);
+
+            while (scanner.hasNext()){
+                System.out.println(scanner.nextLine());
+            }
+            scanner.close();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
     public static void main(String[] args) throws CounterException, IOException {
         while (true) {
             MyMenu();
@@ -126,17 +145,21 @@ public class Main {
 
             switch (counter) {
                 case 1:
-                    System.out.print("Enter file name: ");
                     SaveFile();
                     break;
                 case 2:
                     AddDataToFile();
                     break;
                 case 3:
-                    System.out.print("Enter file name to delete: ");
-                    DeleteFile();
+                    //validation check
                     break;
                 case 4:
+                    ReadInformation();
+                    break;
+                case 5:
+                    DeleteFile();
+                    break;
+                case 6:
                     System.out.println("End of the program");
                     System.exit(0);
                     break;
