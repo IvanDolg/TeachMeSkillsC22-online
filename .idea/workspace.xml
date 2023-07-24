@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Task_1/DocNumberFileMistakes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task_1/DocNumberFileMistakes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Task_1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task_1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task_1/ivan" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +167,7 @@
       <workItem from="1688086023383" duration="325000" />
       <workItem from="1688086360637" duration="5204000" />
       <workItem from="1688162059237" duration="15380000" />
-      <workItem from="1689955722356" duration="25787000" />
+      <workItem from="1689955722356" duration="30327000" />
     </task>
     <servers />
   </component>
@@ -200,5 +201,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Task_1/Main.java</url>
+          <line>149</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

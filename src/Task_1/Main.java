@@ -3,12 +3,10 @@ package Task_1;
 import Task_1.Exception.CounterException;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
 import java.util.*;
 
 /*      Вернемся к домашнему заданию занятия номер 12 и модифицируем его.
@@ -138,6 +136,32 @@ public class Main {
             throw new RuntimeException(e);
         }
     }
+    private static void ValidationCheck(){
+        System.out.print("\nWrite the name of the file you want to check for validity: ");
+        String fileName = scanner().nextLine();
+        String folderPath = "src/Task_1";
+        File file = new File(folderPath, fileName);
+
+        List <String> list = new ArrayList<>();
+
+        try (Scanner scanner = new Scanner(file)){
+            while (scanner.hasNext()){
+                try {
+                    String line = scanner.nextLine();
+                    if (DocNumberFileMistakes.checkValid(line) && DocNumberFileMistakes.numberCheck(line)){
+                        list.add(line);
+                    }
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        for (String lists : list){
+            System.out.println(lists);
+        }
+    }
     public static void main(String[] args) throws CounterException, IOException {
         while (true) {
             MyMenu();
@@ -152,6 +176,7 @@ public class Main {
                     break;
                 case 3:
                     //validation check
+                    ValidationCheck();
                     break;
                 case 4:
                     ReadInformation();
