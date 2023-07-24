@@ -11,16 +11,17 @@ public class DocNumberFileMistakes {
             throw new CounterException("The number must be no more than 6 && no less than 1");
         } else return true;
     }
-    public static boolean checkValid(String str) throws BeginningOfTheLine {
+    public static boolean checkValid(String str) {
         if (str.startsWith("docnum") || str.startsWith("contract")){
             return true;
         }
-        else throw new BeginningOfTheLine("Each line should start with 'docnum' && 'contract'");
+        else return false;
     }
-    public static boolean numberCheck (String str) throws DocNumException {
+
+    public static boolean numberCheck(String str) {
         if (str.length() == 15) {
             return  true;
         }
-        else throw new DocNumException("The length of each line is only 15 characters");
+        else return false;
     }
 }

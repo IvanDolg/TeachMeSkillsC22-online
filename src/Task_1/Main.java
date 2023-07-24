@@ -5,6 +5,7 @@ import Task_1.Exception.CounterException;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.util.*;
@@ -102,7 +103,7 @@ public class Main {
         String folderPath = "src/Task_1";
         File file = new File(folderPath, fileName);
 
-        List<String> list = new ArrayList<>();
+        HashSet <String> list = new HashSet<>();
 
         System.out.print("\nEnter the number of data rows: ");
         int amountOfData = scanner().nextInt();
@@ -110,12 +111,6 @@ public class Main {
         System.out.println("\nEnter the data: ");
         for (int i = 0; i < amountOfData; i++) {
             list.add(scanner().nextLine());
-        }
-
-        System.out.println("\nYour entered data: ");
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i));
-            Files.write(file.toPath(), list, StandardCharsets.UTF_8);
         }
     }
     private static void ReadInformation() {
@@ -136,33 +131,60 @@ public class Main {
             throw new RuntimeException(e);
         }
     }
-    private static void ValidationCheck(){
+    private static void ValidationCheck() {
         System.out.print("\nWrite the name of the file you want to check for validity: ");
         String fileName = scanner().nextLine();
+
         String folderPath = "src/Task_1";
+        String validStrings = "src/Task_1/DocPacage/ValidStrings.txt";
+        String invalidStrings = "src/Task_1/DocPacage/InvalidStrings.txt";
+
         File file = new File(folderPath, fileName);
 
-        List <String> list = new ArrayList<>();
-
-        try (Scanner scanner = new Scanner(file)){
-            while (scanner.hasNext()){
+        List<String> list = new ArrayList<>();
+        Map<String, String> list1 = new HashMap<>();
+        try {
+            PrintWriter printWriter = new PrintWriter("src/Task_1/DocPacage/ValidStrings.txt");
+            printWriter.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        try {
+            PrintWriter printWriter = new PrintWriter("src/Task_1/DocPacage/InvalidStrings.txt");
+            printWriter.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        try (Scanner scanner = new Scanner(file)) {
+            while (scanner.hasNext()) {
                 try {
                     String line = scanner.nextLine();
-                    if (DocNumberFileMistakes.checkValid(line) && DocNumberFileMistakes.numberCheck(line)){
+                    if (DocNumberFileMistakes.checkValid(line) && DocNumberFileMistakes.numberCheck(line)) {
                         list.add(line);
-                    }
-                } catch (Exception e) {
+                        try (PrintWriter writer = new PrintWriter(validStrings)) {
+                            for (String s : list) {
+                                writer.println(s);
+                            }
+                        }
+                    } else {
+                            try (PrintWriter writer = new PrintWriter(invalidStrings)) {
+                                writer.flush();
+                                list1.put(line, " - invalid");
+                                for (Map.Entry<String, String> s : list1.entrySet()) {
+                                    writer.println(s.getKey() + s.getValue());
+                                }
+                            }
+                        }
+                    } catch (Exception e) {
                     throw new RuntimeException(e);
                 }
             }
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
-        for (String lists : list){
-            System.out.println(lists);
-        }
     }
-    public static void main(String[] args) throws CounterException, IOException {
+    
+        public static void main(String[] args) throws CounterException, IOException {
         while (true) {
             MyMenu();
             int counter = scanner().nextInt();
@@ -175,7 +197,6 @@ public class Main {
                     AddDataToFile();
                     break;
                 case 3:
-                    //validation check
                     ValidationCheck();
                     break;
                 case 4:
