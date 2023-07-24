@@ -1,0 +1,10 @@
+docnum333333333 - valid
+contractIvanDol - valid
+docnumggggggggg - valid
+docnum111111111 - valid
+contract1234567 - valid
+docnumiiiiiiiii - valid
+contract8901234 - valid
+contractpipipi1 - valid
+contract1i1i1i1 - valid
+contract69okDDD - valid

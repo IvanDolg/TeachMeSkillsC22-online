@@ -1,8 +1,6 @@
 package Task_1;
 
-import Task_1.Exception.BeginningOfTheLine;
 import Task_1.Exception.CounterException;
-import Task_1.Exception.DocNumException;
 
 public class DocNumberFileMistakes {
 
@@ -17,7 +15,6 @@ public class DocNumberFileMistakes {
         }
         else return false;
     }
-
     public static boolean numberCheck(String str) {
         if (str.length() == 15) {
             return  true;
