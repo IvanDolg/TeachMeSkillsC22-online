@@ -39,6 +39,8 @@ public class CustomArrayList <T>{
         }
         return elements[index];
     }
+
+    // this method does not work correctly
     public boolean contains(T element){
         for (T value : elements){
             if (value != null && value.equals(element)){
@@ -70,6 +72,7 @@ public class CustomArrayList <T>{
 
         costomList.remove(3);
 
+        // this method does not work correctly
         System.out.println(costomList.contains(0));
         System.out.println(costomList.contains(1));
         System.out.println(costomList.contains(2));

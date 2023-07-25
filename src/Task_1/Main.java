@@ -18,6 +18,26 @@ public class Main {
                 "\n6) Exit" +
                 "\n\nEnter what you want to do: ");
     }
+    private static void FileSearch(){
+        File file = new File("src/Task_1/DocPacage");
+        for (File file1 : file.listFiles()){
+            System.out.println(file1.getName());
+        }
+    }
+    private static void CleanFile(){
+        try {
+            PrintWriter printWriter = new PrintWriter("src/Task_1/DocPacage/ValidStrings.txt");
+            printWriter.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        try {
+            PrintWriter printWriter = new PrintWriter("src/Task_1/DocPacage/InvalidStrings.txt");
+            printWriter.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
     private static void SaveFile(){
         System.out.print("Enter file name: ");
         String fileName = scanner().nextLine();
@@ -34,7 +54,9 @@ public class Main {
         }
     }
     private static void DeleteFile() {
-        System.out.print("Enter file name to delete: ");
+        System.out.println("\nAll existing files with the extension .txt: ");
+        FileSearch();
+        System.out.print("\nEnter file name to delete: ");
         String fileName = scanner().nextLine();
         String folderPath = "src/Task_1/DocPacage";
 
@@ -46,29 +68,35 @@ public class Main {
         }
     }
     private static void AddDataToFile() {
+        System.out.println("\nAll existing files with the extension .txt: ");
+        FileSearch();
         System.out.print("\nWrite the name of the file you wont to save the data to: ");
         String fileName = scanner().nextLine();
         String folderPath = "src/Task_1/DocPacage";
         File file = new File(folderPath, fileName);
 
-        HashSet <String> hashSet = new HashSet<>();
-
-        System.out.print("\nEnter the number of data rows: ");
-        int amountOfData = scanner().nextInt();
+        Set <String> hashSet = new HashSet<>();
+        String line;
 
         System.out.println("\nEnter the data: ");
-        for (int i = 0; i < amountOfData; i++) {
-            hashSet.add(scanner().nextLine());
+        while (true){
+            line = scanner().nextLine().trim();
+            if (line.equals("0")){
+                break;
+            }
+            hashSet.add(line);
         }
         try (FileWriter fileWriter = new FileWriter(file, true)){
             for (String print : hashSet){
-                fileWriter.write(print + "\n\n");
+                fileWriter.write(print + "\n");
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
     private static void ReadInformation() {
+        System.out.println("\nAll existing files with the extension .txt: ");
+        FileSearch();
         System.out.print("\nWrite the name of the file you wont to read: ");
         String fileName = scanner().nextLine();
         String folderPath = "src/Task_1/DocPacage";
@@ -86,21 +114,9 @@ public class Main {
             throw new RuntimeException(e);
         }
     }
-    private static void CleanFile(){
-        try {
-            PrintWriter printWriter = new PrintWriter("src/Task_1/DocPacage/ValidStrings.txt");
-            printWriter.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        try {
-            PrintWriter printWriter = new PrintWriter("src/Task_1/DocPacage/InvalidStrings.txt");
-            printWriter.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
     private static void ValidationCheck() {
+        System.out.println("\nAll existing files with the extension .txt: ");
+        FileSearch();
         System.out.print("\nWrite the name of the file you want to check for validity: ");
         String fileName = scanner().nextLine();
 
@@ -127,9 +143,16 @@ public class Main {
                     } else {
                             try (PrintWriter writer = new PrintWriter(invalidStrings)) {
                                 writer.flush();
-                                map1.put(line, " - invalid");
-                                for (Map.Entry<String, String> entry : map1.entrySet()) {
-                                    writer.println(entry.getKey() + entry.getValue());
+                                if (line.length() != 15) {
+                                    map1.put(line, " - the length of each line is only 15 characters");
+                                    for (Map.Entry<String, String> entry : map1.entrySet()) {
+                                        writer.println(entry.getKey() + entry.getValue());
+                                    }
+                                } else if (!line.startsWith("docnum") || !line.startsWith("contract")){
+                                    map1.put(line, " - each line should start with 'docnum' && 'contract'");
+                                    for (Map.Entry<String, String> entry : map1.entrySet()) {
+                                        writer.println(entry.getKey() + entry.getValue());
+                                    }
                                 }
                             }
                         }
@@ -142,7 +165,7 @@ public class Main {
             throw new RuntimeException(e);
         }
     }
-        public static void main(String[] args) throws CounterException, IOException {
+        public static void main(String[] args) throws CounterException {
         CleanFile();
         while (true) {
             MyMenu();
