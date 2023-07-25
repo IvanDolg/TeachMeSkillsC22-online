@@ -1,8 +1,0 @@
-docnum522222222666 - the length of each line is only 15 characters
-Ivandolgolaptevdocnum231111123docnum232000002 - the length of each line is only 15 characters
-docnum23 - the length of each line is only 15 characters
-docpum555555555 - each line should start with 'docnum' && 'contract'
-docnrm444444444 - each line should start with 'docnum' && 'contract'
-contract232245 - the length of each line is only 15 characters
-docnumqqqqqqqqqq - the length of each line is only 15 characters
-docnvvvvvvvvv - the length of each line is only 15 characters

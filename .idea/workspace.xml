@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51007435-8f9c-4797-b636-a60be43caad3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task_1/DocPacage/InvalidStrings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task_1/DocPacage/InvalidStrings.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task_1/DocPacage/ValidStrings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task_1/DocPacage/ValidStrings.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task_1/DocPacage/number" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task_1/DocPacage/number" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task_1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task_1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task_1/DocNumberFileMistakes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task_1/DocPacage/InvalidStrings.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task_1/DocPacage/ValidStrings.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task_1/DocPacage/number" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task_1/Exception/CounterException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task_1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task_2/CustomArrayList.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +170,7 @@
       <workItem from="1688086023383" duration="325000" />
       <workItem from="1688086360637" duration="5204000" />
       <workItem from="1688162059237" duration="15380000" />
-      <workItem from="1689955722356" duration="58571000" />
+      <workItem from="1689955722356" duration="58901000" />
     </task>
     <servers />
   </component>
