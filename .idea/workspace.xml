@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51007435-8f9c-4797-b636-a60be43caad3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Task_1/DocNumberFileMistakes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task_1/DocPacage/InvalidStrings.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task_1/DocPacage/ValidStrings.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task_1/DocPacage/number" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task_1/Exception/CounterException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task_1/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task_2/CustomArrayList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +29,11 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -45,20 +45,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/vvvvv/OneDrive/Рабочий стол/Java junior/TeachMeSkillsC22-online",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/vvvvv/OneDrive/Рабочий стол/lessonCodeTMS/lesson-14-22-onl&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="hometask_8_2_Task_3" />
@@ -75,7 +75,7 @@
       <recent name="Task_2.Exception" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.HomeWork">
     <configuration name="HomeWork" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HomeWork" />
       <module name="lesson_2" />
@@ -170,7 +170,9 @@
       <workItem from="1688086023383" duration="325000" />
       <workItem from="1688086360637" duration="5204000" />
       <workItem from="1688162059237" duration="15380000" />
-      <workItem from="1689955722356" duration="58901000" />
+      <workItem from="1689955722356" duration="59021000" />
+      <workItem from="1690446570961" duration="660000" />
+      <workItem from="1690572405126" duration="2240000" />
     </task>
     <servers />
   </component>
