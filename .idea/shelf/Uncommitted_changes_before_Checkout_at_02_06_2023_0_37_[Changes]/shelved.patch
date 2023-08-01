@@ -1,0 +1,16 @@
+Index: src/HomeWork6.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class HomeWork6 {\r\n    public static void main(String[] args) {\r\n\r\n    }\r\n\r\n\r\n}\r\n
+===================================================================
+diff --git a/src/HomeWork6.java b/src/HomeWork6.java
+--- a/src/HomeWork6.java	
++++ b/src/HomeWork6.java	
+@@ -1,6 +1,7 @@
+ public class HomeWork6 {
+     public static void main(String[] args) {
+ 
++        System.out.println("xuy");
+     }
+ 
+ 
