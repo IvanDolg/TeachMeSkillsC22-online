@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="51007435-8f9c-4797-b636-a60be43caad3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InMamoryOperationStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InMamoryOperationStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OperationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OperationService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +76,7 @@
       <recent name="Task_2.Exception" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="HomeWork" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HomeWork" />
       <module name="lesson_2" />
@@ -99,6 +100,13 @@
     </configuration>
     <configuration name="HomeWork6" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HomeWork6" />
+      <module name="lesson_2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="lesson_2" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -132,6 +140,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Task_1.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.HomeWork5" />
@@ -173,7 +182,7 @@
       <workItem from="1689955722356" duration="59021000" />
       <workItem from="1690446570961" duration="660000" />
       <workItem from="1690572405126" duration="2240000" />
-      <workItem from="1690761653296" duration="3291000" />
+      <workItem from="1690761653296" duration="10557000" />
     </task>
     <servers />
   </component>
@@ -207,5 +216,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/OperationService.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -11,6 +11,6 @@ public class InMamoryOperationStorage implements OperationStorage{
 
     @Override
     public List<Operation> findAll() {
-        return new ArrayList<>(this.operations);
+        return new ArrayList<>(operations);
     }
 }
