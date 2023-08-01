@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class OperationService {
-    private final OperationStorage storage = new FileOperationStorage();
+    private final OperationStorage storage = new InMamoryOperationStorage();
 
     public Operation calculate(Operation operation){
         switch (operation.getType()){
@@ -30,7 +30,7 @@ public class OperationService {
         List<Operation> all = storage.findAll();
         List<String> result = new ArrayList<>();
         for (Operation operation : all){
-            result.add("Result = " + operation.getNum1() + " " + operation.getNum2() + " " + operation.getResult() + "\n");
+            result.add(operation.toString());
         }
         return result;
     }

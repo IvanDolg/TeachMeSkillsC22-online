@@ -49,11 +49,12 @@ public class Operation {
 
     @Override
     public String toString() {
-        return "Operation{" +
-                "num1=" + num1 +
-                ", num2=" + num2 +
-                ", result=" + result +
-                ", type='" + type + '\'' +
-                '}';
+        return  "num1 = " + num1 +
+                ", num2 = " + num2 +
+                ", result = " + result +
+                ", type = " + type + "\n";
+    }
+    public String toStringStorage() {
+        return num1 + " " + num2 + " " + type + " " + result;
     }
 }

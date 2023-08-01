@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51007435-8f9c-4797-b636-a60be43caad3" name="Changes" comment="" />
+    <list default="true" id="51007435-8f9c-4797-b636-a60be43caad3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/history.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileOperationStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileOperationStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Operation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OperationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OperationService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,6 +70,7 @@
       <recent name="C:\Users\vvvvv\OneDrive\Рабочий стол\Java junior\TeachMeSkillsC22-online\src\Task_2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vvvvv\OneDrive\Рабочий стол\Java junior\TeachMeSkillsC22-online\src\DocFile" />
       <recent name="C:\Users\vvvvv\OneDrive\Рабочий стол\Java junior\TeachMeSkillsC22-online\src\Task_1\DocFile" />
       <recent name="C:\Users\vvvvv\OneDrive\Рабочий стол\Java junior\TeachMeSkillsC22-online\src\Task_2\DocFile" />
     </key>
@@ -178,7 +185,7 @@
       <workItem from="1689955722356" duration="59021000" />
       <workItem from="1690446570961" duration="660000" />
       <workItem from="1690572405126" duration="2240000" />
-      <workItem from="1690761653296" duration="12837000" />
+      <workItem from="1690761653296" duration="18600000" />
     </task>
     <servers />
   </component>
@@ -212,16 +219,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/OperationService.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
