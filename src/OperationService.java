@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class OperationService {
-    private final OperationStorage storage = new InMamoryOperationStorage();
+    private final OperationStorage storage = new FileOperationStorage();
 
     public Operation calculate(Operation operation){
         switch (operation.getType()){
