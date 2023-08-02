@@ -20,7 +20,6 @@ public class Application extends ApplicationMethod{
             switch (counter){
                 case 1 -> removeDuplicates();
                 case 2 -> getAllEvenElements();
-
                 case 3 -> multiplyElements();
                 case 4 -> sort();
                 case 5 -> getAmountOfElements();
