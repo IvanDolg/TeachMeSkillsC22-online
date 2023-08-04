@@ -1,8 +1,13 @@
 package Task_1;
 
+/*      Написать программу для проверки на валидность введенного ip адреса.
+        Пусть ip адрес задается с консоли.
+        Программа должна проверять валидность введенного ip адреса с
+        помощью регулярного выражения и выводить результат проверки на
+        экран.*/
+
 public class Main {
     public static void main(String[] args) {
-        Application application = new Application();
-        application.start();
+
     }
 }
