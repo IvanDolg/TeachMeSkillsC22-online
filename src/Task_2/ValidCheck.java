@@ -79,5 +79,7 @@ public class ValidCheck {
         } else System.out.println("The folder does not contain any files.");
     }
 
-    public void showValidDoc() {System.out.println(map);}
+    public void showValidDoc() {
+        System.out.println("\nMap output: ");
+        System.out.println(map);}
 }
