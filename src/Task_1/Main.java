@@ -23,7 +23,7 @@ public class Main {
         Matcher matcher = pattern.matcher(ipAddress);
 
        if (matcher.find()){
-           System.out.println(pattern.matcher(ipAddress).matches());
+           System.out.println("Ip address valid");
        } else System.out.println("Ip address does not fit the condition");
     }
 }
