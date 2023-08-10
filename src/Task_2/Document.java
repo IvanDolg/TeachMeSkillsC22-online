@@ -32,7 +32,7 @@ public class Document {
     @Override
     public String toString() {
         return "\ncontractNum = " + contractNum +
-                ",\nemail = " + email +
-                ",\nphoneNum = " + phoneNum + "\n";
+                "\nemail = " + email +
+                "\nphoneNum = " + phoneNum + "\n\n";
     }
 }

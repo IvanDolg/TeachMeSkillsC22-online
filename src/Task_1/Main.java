@@ -10,13 +10,11 @@ public class Main {
         System.out.print("Enter id address: " );
         String ipAddress = scanner.nextLine();
 
-
-        String regexp = "^(?:[0-9]{1,3}\\.){3}[0-9]{1,3}$";
-
+        String regexp = "^(?:25[0-5]|2[0-4]\\d|[0-1]?\\d{1,2})(?:\\.(?:25[0-5]|2[0-4]\\d|[0-1]?\\d{1,2})){3}$";
         Pattern pattern = Pattern.compile(regexp);
         Matcher matcher = pattern.matcher(ipAddress);
 
-       if (matcher.find()){
+       if (matcher.matches()){
            System.out.println("Ip address valid");
        } else System.out.println("Ip address is invalid");
     }
