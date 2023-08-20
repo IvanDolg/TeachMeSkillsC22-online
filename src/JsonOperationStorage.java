@@ -1,12 +1,10 @@
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-
 import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Type;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
 import java.util.List;
 
 public class JsonOperationStorage implements OperationStorage{
@@ -16,14 +14,9 @@ public class JsonOperationStorage implements OperationStorage{
     public JsonOperationStorage() {}
     @Override
     public void save(Operation operation) {
-        List<Operation> all = findAll();
-        if (all == null)
-            all = new ArrayList<>();
-
-        all.add(operation);
-
-        String jsonData = gson.toJson(all);
-
+        List<Operation> list = findAll();
+        list.add(operation);
+        String jsonData = gson.toJson(list);
         try (FileWriter fileWriter = new FileWriter(path, false)) {
             fileWriter.write(jsonData);
         } catch (IOException e) {
@@ -32,14 +25,12 @@ public class JsonOperationStorage implements OperationStorage{
     }
     @Override
     public List<Operation> findAll() {
-        String jsonOperationData;
-
+        String opData;
         try {
-            jsonOperationData = Files.readString(Path.of(path));
+            opData = Files.readString(Path.of(path));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
-        return gson.fromJson(jsonOperationData, jsonListTypeToken);
+        return gson.fromJson(opData, jsonListTypeToken);
     }
 }
