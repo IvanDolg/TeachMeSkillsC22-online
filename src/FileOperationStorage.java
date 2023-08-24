@@ -5,17 +5,15 @@ import java.util.Scanner;
 
 public class FileOperationStorage implements OperationStorage{
     private File file = new File("src/DocFile/History.txt");
-
     @Override
     public void save(Operation operation) {
         try(FileWriter fileWriter = new FileWriter(file, true)){
-            fileWriter.write(operation.toStringStorage());
+            fileWriter.write(operation.toNewStringStorage());
             fileWriter.write(10);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
-
     @Override
     public List<Operation> findAll() {
         List<Operation> operations = new ArrayList<>();
