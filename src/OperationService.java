@@ -4,7 +4,7 @@ import java.util.List;
 public class OperationService {
     private final Reader reader = new ConsoleReader();
     private final Writer writer = new ConsoleWriter();
-    private final OperationStorage storage = new FileOperationStorage();
+    private final OperationStorage storage = new DatabaseOperationStorage();
     public Operation calculate(Operation operation){
         switch (operation.getType()){
             case "sum":
